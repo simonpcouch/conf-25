@@ -21,10 +21,10 @@ filters:
 
 :::::: {.columns}
 ::: {.column width="70%"}
-<br><br><br><br>
+<br><br><br><br><br>
 Simon P. Couch - Posit PBC
 :::
-::: {.column width="30%"}It
+::: {.column width="30%"}
 ![](figures/bear/happy-bear.png){width="250px"}
 :::
 ::: 
@@ -175,7 +175,7 @@ Your solver is the `client`✅
 Evaluations have three pieces:
 
 * <span style="color:#d1d1d1;">Dataset</span>
-* Solver✅
+* Solver ✅
 * <span style="color:#d1d1d1;">Scorer</span>
 
 ## 
@@ -183,7 +183,7 @@ Evaluations have three pieces:
 Evaluations have three pieces:
 
 * Dataset
-* Solver✅
+* Solver ✅
 * <span style="color:#d1d1d1;">Scorer</span>
 
 ## Dataset
@@ -202,27 +202,23 @@ e.g.
 
 ## Dataset
 
-A few:
-
-* `input`s: Prompts that users might provide
-* `target`s: Corresponding grading guidance
-
-e.g.
-
-* `input`: "Are there any talks about evals?"
-* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?' It will be _such_ a great talk!"
-
-## Dataset
-
 ![](figures/spreadsheet.png){fig-align="center"}
 
 ## 
 
 Evaluations have three pieces:
 
-* Dataset✅
-* Solver✅
+* Dataset ✅
+* Solver ✅
 * <span style="color:#d1d1d1;">Scorer</span>
+
+## 
+
+Evaluations have three pieces:
+
+* Dataset ✅
+* Solver ✅
+* Scorer
 
 ## Scorer
 
@@ -266,9 +262,9 @@ As much as an evaluation toolkit is about evaluating quality, it is about debugg
 
 Evaluations have three pieces:
 
-* Dataset✅
-* Solver✅
-* Scorer✅
+* Dataset ✅
+* Solver ✅
+* Scorer ✅
 
 ##
 
