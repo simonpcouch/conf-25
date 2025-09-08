@@ -63,6 +63,12 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 ![](figures/bear/teary-eyed-bear.png){.absolute width=150.101px left=0px top=517.115px}
 
+##
+
+![](figures/hexes/vitals.png){.absolute width=250px left=200px top=200px}
+
+![](figures/inspect.png){.absolute width=400px left=550px top=280px style="border-radius: 10px; box-shadow: 0 10px 16px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.1);"}
+
 ## When it comes to running evals on your LLM apps...
 
 . . .
