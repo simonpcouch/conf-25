@@ -9,4 +9,5 @@ Various nods:
 * The example underlying this talk is Sam Parmar's awesome [posit::conf(2025) agenda chat app](https://github.com/parmsam/posit-conf-2025-chat).
 * Thanks to Kristin Bott for her input on earlier versions of this talk. 
 * The points on the link between success in SWE and pace of iteration draw from Hamel Husain's blog post [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/). 
+    - Hamel also hosted the author of Inspect, JJ Allaire, for a guest lecture in his course. A recording of that post and slide annotations are [here](https://hamel.dev/notes/llm/evals/inspect.html).
 * The variants of the teddy bear in the stacks hex were generated with Gemini 2.5 Flash Image.
