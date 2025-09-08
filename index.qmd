@@ -182,6 +182,8 @@ Evaluations of ellmer-based apps are plug-and-play:
 
 ## 
 
+<br><br>
+
 Evaluations have three pieces:
 
 * Dataset
@@ -204,6 +206,8 @@ Scorer
 
 ## 
 
+<br><br>
+
 ::: aside
 ::: {.progress-tracker}
 ::: {.progress-item}
@@ -219,6 +223,8 @@ Scorer
 :::
 
 ##
+
+<br><br>
 
 The conf chat app looks like this:
 
@@ -252,6 +258,8 @@ Scorer
 
 ## 
 
+<br><br>
+
 ::: aside
 ::: {.progress-tracker}
 ::: {.progress-item}
@@ -268,6 +276,8 @@ Scorer
 
 ## 
 
+<br><br>
+
 ::: aside
 ::: {.progress-tracker}
 ::: {.progress-item .active}
@@ -283,6 +293,8 @@ Scorer
 :::
 
 ##
+
+<br><br>
 
 A few:
 
@@ -312,6 +324,8 @@ Scorer
 
 ## 
 
+<br>
+
 ![](figures/spreadsheet.png){fig-align="center" height=600px}
 
 ::: aside
@@ -328,7 +342,10 @@ Scorer
 :::
 :::
 
+
 ## 
+
+<br><br>
 
 ::: aside
 ::: {.progress-tracker}
@@ -346,6 +363,8 @@ Scorer
 
 ## 
 
+<br><br>
+
 ::: aside
 ::: {.progress-tracker}
 ::: {.progress-item .completed}
@@ -361,6 +380,8 @@ Scorer
 :::
 
 ## 
+
+<br><br>
 
 ```{r}
 #| label: interpolate
@@ -395,6 +416,8 @@ Scorer
 
 ## 
 
+<br><br>
+
 _Wait, we're using an LLM to grade an LLM's output?_
 
 . . .
@@ -427,6 +450,8 @@ Scorer
 :::
 
 ## 
+
+<br><br>
 
 ::: aside
 ::: {.progress-tracker}
