@@ -6,7 +6,7 @@ This is a talk about LLM evaluation with [Inspect](https://inspect.aisi.org.uk/)
 
 Various nods:
 
-* The example underlying this talk is Sam Parmar's awesome [https://github.com/parmsam/posit-conf-2025-chat](posit::conf(2025) agenda chat app).
+* The example underlying this talk is Sam Parmar's awesome [posit::conf(2025) agenda chat app](https://github.com/parmsam/posit-conf-2025-chat).
 * Thanks to Kristin Bott for her input on earlier versions of this talk. 
 * The points on the link between success in SWE and pace of iteration draw from Hamel Husain's blog post [Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/). 
 * The variants of the teddy bear in the stacks hex were generated with Gemini 2.5 Flash Image.
