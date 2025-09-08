@@ -242,7 +242,7 @@
     "href": "index.html#you-really-should-be-evaluating-your-llm-product-3",
     "title": "",
     "section": "You really should be [evaluating your LLM product]",
-    "text": "You really should be [evaluating your LLM product]\nAI app tooling should look like SWE tooling:\n\nMake changes (i.e. prompt engineering, fine-tuning, …)\nEvaluate quality\nDebug issues\n\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+    "text": "You really should be [evaluating your LLM product]\nAI app tooling should look like SWE tooling:\n\nMake changes (i.e. prompt engineering, fine-tuning, …)\nEvaluate quality\nDebug issues\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
   },
   {
     "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-4",

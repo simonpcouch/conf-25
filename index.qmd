@@ -24,8 +24,8 @@ filters:
 <br><br><br><br>
 Simon P. Couch - Posit PBC
 :::
-::: {.column width="30%"}
-![](figures/mole/mole.png){width="250px"}
+::: {.column width="30%"}It
+![](figures/bear/happy-bear.png){width="250px"}
 :::
 ::: 
 
@@ -43,13 +43,13 @@ Simon P. Couch - Posit PBC
 
 ![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
 
-![](figures/mole/narcissistic-mole.png){.absolute width=512px height=455.5px left=644.749px top=-35px}
+![](figures/bear/narcissistic-bear.png){.absolute width=411px left=665px top=-35px}
 
 ## 
 
 ![](figures/conf-bot-narcissus.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
 
-![](figures/mole/narcissistic-mole.png){.absolute width=512px height=455.5px left=644.749px top=-35px}
+![](figures/bear/narcissistic-bear.png){.absolute width=411px left=665px top=-35px}
 
 ## 
 
@@ -61,7 +61,7 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 . . .
 
-![](figures/mole/teary-eyed-mole.png){.absolute width=150.101px height=165.885px left=0px top=517.115px}
+![](figures/bear/teary-eyed-bear.png){.absolute width=150.101px left=0px top=517.115px}
 
 ## When it comes to running evals on your LLM apps...
 
@@ -105,7 +105,7 @@ The AI app development cycle looks different for many:
 2) Have a looksie
 3) Whack-a-mole 
 
-![](figures/mole/whack-a-mole.png){.absolute width=390.5px height=185.5px left=576.807px top=386.177px}
+![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=576.807px top=386.177px}
 
 ## You really should be [evaluating your LLM product]
 
@@ -115,16 +115,12 @@ AI app tooling should look like SWE tooling:
 2) Evaluate quality
 3) Debug issues 
 
-![](figures/hexes/vitals.png){.absolute width=204.439px height=222.554px left=401.561px top=317.446px}
-
-![](figures/mole/mole-to-UR.png){.absolute width=132.101px height=139.885px left=0px top=537.115px}
+![](figures/hexes/vitals.png){.absolute width=204.439px height=225.554px left=401.561px top=317.446px}
 
 :::notes
 If there's enough time here, this is the "why not just use an off-the-shelf eval?"
 - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ [Source](https://thezvi.substack.com/p/ai-130-talking-past-the-sale)
-
 :::
-
 
 # You can do it! {background-color="#5B7FA0"}
 
@@ -132,13 +128,13 @@ If there's enough time here, this is the "why not just use an off-the-shelf eval
 
 Evaluations of ellmer-based apps are plug-and-play:
 
-![](figures/mole/plug-and-play.png){fig-align="center"}
+![](figures/bear/plug-and-play.png){fig-align="center"}
 
 ## 
 
 Evaluations of ellmer-based apps are plug-and-play:
 
-![](figures/mole/plug-and-play-2.png){fig-align="center"}
+![](figures/bear/plug-and-play-2.png){fig-align="center"}
 
 ## 
 
@@ -253,7 +249,7 @@ _Wait, we're using an LLM to grade an LLM's output?_
 
 . . .
 
-![](figures/mole/spiderman.png){.absolute width=419.289px height=270.108px left=500.711px top=270.892px}
+![](figures/bear/spiderman.png){.absolute width=410.289px left=500.711px top=270.892px}
 
 . . .
 
@@ -359,4 +355,4 @@ TODO: Once this is live, try to connect to a deployed version of the viewer
 
 ![](figures/closing-chat.png)
 
-![](figures/mole/happy-mole.png){.absolute width=135px height=139px left=730px top=375px}
+![](figures/bear/happy-bear.png){.absolute width=135px height=165px left=730px top=358px}
