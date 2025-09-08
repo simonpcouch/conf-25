@@ -102,15 +102,15 @@ knitr::include_graphics("figures/conf-bot-response.png")
 In SWE:
 
 :::::: {.columns}
-::: {.column}
+::: {.column width="40%"}
 1) Make changes
 2) Evaluate quality
 3) Debug issues
 :::
-::: {.column}
-(i.e. coding)
+::: {.column width="60%"}
+(coding)
 
-(i.e. unit testing)
+(unit testing)
 :::
 :::
 
@@ -119,11 +119,11 @@ In SWE:
 In AI:
 
 :::::: {.columns}
-::: {.column}
+::: {.column width="33%"}
 1) Make changes
 :::
-::: {.column}
-(i.e. prompt engineering, fine-tuning, ...)
+::: {.column width="67%"}
+(prompt engineering, fine-tuning, ...)
 :::
 :::
 
@@ -132,34 +132,34 @@ In AI:
 In AI:
 
 :::::: {.columns}
-::: {.column}
-1) Make changes<br><br>
+::: {.column width="33%"}
+1) Make changes
 2) Have a looksie
 3) Whack-a-mole 
 :::
-::: {.column}
-(i.e. prompt engineering, fine-tuning, ...)
+::: {.column width="67%"}
+(prompt engineering, fine-tuning, ...)
 :::
 :::
 
-![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=535px top=220px}
+![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=365px top=150px}
 
 ## 
 
 AI 🤝 SWE tooling
 
 :::::: {.columns}
-::: {.column}
-1) Make changes<br><br>
+::: {.column width="33%"}
+1) Make changes
 2) Evaluate quality
 3) Debug issues 
 :::
-::: {.column}
-(i.e. prompt engineering, fine-tuning, ...)
+::: {.column width="67%"}
+(prompt engineering, fine-tuning, ...)
 :::
 :::
 
-![](figures/hexes/vitals.png){.absolute width=204.439px left=535px top=200px}
+![](figures/hexes/vitals.png){.absolute width=204.439px left=355px top=150px}
 
 :::notes
 If there's enough time here, this is the "why not just use an off-the-shelf eval?"

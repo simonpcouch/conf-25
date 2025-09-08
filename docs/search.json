@@ -291,7 +291,7 @@
     "href": "index.html#section-7",
     "title": "",
     "section": "",
-    "text": "In SWE:\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(i.e. coding)\n(i.e. unit testing)"
+    "text": "In SWE:\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(coding)\n(unit testing)"
   },
   {
     "objectID": "index.html#solver",
@@ -305,14 +305,14 @@
     "href": "index.html#section-8",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\n\n\n(i.e. prompt engineering, fine-tuning, …)"
+    "text": "In AI:\n\n\n\nMake changes\n\n\n(prompt engineering, fine-tuning, …)"
   },
   {
     "objectID": "index.html#section-9",
     "href": "index.html#section-9",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(i.e. prompt engineering, fine-tuning, …)"
+    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)"
   },
   {
     "objectID": "index.html#dataset",
@@ -340,7 +340,7 @@
     "href": "index.html#section-10",
     "title": "",
     "section": "",
-    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(i.e. prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
   },
   {
     "objectID": "index.html#scorer",
