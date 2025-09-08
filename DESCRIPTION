@@ -14,3 +14,5 @@ Imports:
 Depends: 
     R (>= 3.5)
 LazyData: true
+URL: https://github.com/simonpcouch/conf-25
+BugReports: https://github.com/simonpcouch/conf-25/issues
