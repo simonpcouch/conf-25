@@ -87,41 +87,79 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 [[evaluating your LLM product]]{style="color: white;"}
 
-## You really should be [evaluating your LLM product]
+##
 
-In SWE, success is driven by how quickly you can iterate.
+<br><br><br><br>
 
-So we have tools for each part of that process:
+> _Like software engineering, success with AI hinges on how fast you can iterate._ - Hamel Husain
 
-1) Make changes (i.e. coding)
-2) Evaluate quality (i.e. unit testing)
+:::footer
+<span style="color:#aa5b31;">https://hamel.dev/blog/posts/evals/</span>
+:::
+
+## 
+
+In SWE:
+
+:::::: {.columns}
+::: {.column}
+1) Make changes
+2) Evaluate quality
 3) Debug issues
+:::
+::: {.column}
+(i.e. coding)
 
-## You really should be [evaluating your LLM product]
+(i.e. unit testing)
+:::
+:::
 
-The AI app development cycle looks different for many:
+## 
 
-1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+In AI:
 
-## You really should be [evaluating your LLM product]
+:::::: {.columns}
+::: {.column}
+1) Make changes
+:::
+::: {.column}
+(i.e. prompt engineering, fine-tuning, ...)
+:::
+:::
 
-The AI app development cycle looks different for many:
+##
 
-1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+In AI:
+
+:::::: {.columns}
+::: {.column}
+1) Make changes<br><br>
 2) Have a looksie
 3) Whack-a-mole 
+:::
+::: {.column}
+(i.e. prompt engineering, fine-tuning, ...)
+:::
+:::
 
-![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=576.807px top=386.177px}
+![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=535px top=220px}
 
-## You really should be [evaluating your LLM product]
+## 
 
-AI app tooling should look like SWE tooling:
+AI 🤝 SWE tooling
 
-1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+:::::: {.columns}
+::: {.column}
+1) Make changes<br><br>
 2) Evaluate quality
 3) Debug issues 
+:::
+::: {.column}
+(i.e. prompt engineering, fine-tuning, ...)
+:::
+:::
 
-![](figures/hexes/vitals.png){.absolute width=204.439px height=225.554px left=401.561px top=317.446px}
+![](figures/hexes/vitals.png){.absolute width=204.439px left=535px top=200px}
 
 :::notes
 If there's enough time here, this is the "why not just use an off-the-shelf eval?"

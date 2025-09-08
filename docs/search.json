@@ -284,14 +284,14 @@
     "href": "index.html#section-6",
     "title": "",
     "section": "",
-    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+    "text": "Like software engineering, success with AI hinges on how fast you can iterate. - Hamel Husain\n\n\nhttps://hamel.dev/blog/posts/evals/"
   },
   {
     "objectID": "index.html#section-7",
     "href": "index.html#section-7",
     "title": "",
     "section": "",
-    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+    "text": "In SWE:\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(i.e. coding)\n(i.e. unit testing)"
   },
   {
     "objectID": "index.html#solver",
@@ -305,14 +305,14 @@
     "href": "index.html#section-8",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
+    "text": "In AI:\n\n\n\nMake changes\n\n\n(i.e. prompt engineering, fine-tuning, …)"
   },
   {
     "objectID": "index.html#section-9",
     "href": "index.html#section-9",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
+    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(i.e. prompt engineering, fine-tuning, …)"
   },
   {
     "objectID": "index.html#dataset",
@@ -340,7 +340,7 @@
     "href": "index.html#section-10",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset\nSolver ✅\nScorer"
+    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(i.e. prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
   },
   {
     "objectID": "index.html#scorer",
@@ -375,46 +375,88 @@
     "href": "index.html#section-11",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset\nSolver ✅\nScorer"
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
   },
   {
     "objectID": "index.html#section-12",
     "href": "index.html#section-12",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer"
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
   },
   {
     "objectID": "index.html#section-13",
     "href": "index.html#section-13",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer"
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
   },
   {
     "objectID": "index.html#section-14",
     "href": "index.html#section-14",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer ✅"
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
   },
   {
     "objectID": "index.html#section-15",
     "href": "index.html#section-15",
     "title": "",
     "section": "",
-    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver ✅\nScorer"
   },
   {
     "objectID": "index.html#section-16",
     "href": "index.html#section-16",
     "title": "",
     "section": "",
-    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver ✅\nScorer"
   },
   {
     "objectID": "index.html#section-17",
     "href": "index.html#section-17",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer"
+  },
+  {
+    "objectID": "index.html#section-18",
+    "href": "index.html#section-18",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer"
+  },
+  {
+    "objectID": "index.html#section-19",
+    "href": "index.html#section-19",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset ✅\nSolver ✅\nScorer ✅"
+  },
+  {
+    "objectID": "index.html#section-20",
+    "href": "index.html#section-20",
+    "title": "",
+    "section": "",
+    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+  },
+  {
+    "objectID": "index.html#section-21",
+    "href": "index.html#section-21",
+    "title": "",
+    "section": "",
+    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+  },
+  {
+    "objectID": "index.html#section-22",
+    "href": "index.html#section-22",
+    "title": "",
+    "section": "",
+    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+  },
+  {
+    "objectID": "index.html#section-23",
+    "href": "index.html#section-23",
     "title": "",
     "section": "",
     "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
