@@ -1,0 +1,99 @@
+/*-- scss:defaults --*/
+
+// https://quarto.org/docs/presentations/revealjs/themes.html#saas-variables
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&display=swap');
+
+// Primary colors
+$rust: #c46938;
+$forest: #3d6c56;
+$charcoal: #1a162d;
+
+// colors
+$body-bg: white !default;
+$body-color: $charcoal !default;
+$link-color: $rust !default;
+
+// headings
+$presentation-heading-font: 'DM Sans', sans-serif !default;
+$presentation-heading-color: $charcoal !default;
+
+/*-- scss:rules --*/
+
+// Annotation link
+.annotation-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 75px;
+}
+
+// When `#| output-location: column` is set, it is no longer 100% height
+.reveal .column-output-location .column:first-of-type div.sourceCode {
+  height: unset !important;
+}
+
+.reveal .slide blockquote {
+  color: #a1a1a1;
+}
+
+// Additional colors for code
+$code-bg: lighten($charcoal, 73%) !default;  // Very light background
+$code-color: $charcoal !default;
+$code-block-bg: lighten($charcoal, 71%) !default;  // Slightly darker than inline code
+
+/*-- scss:rules --*/
+
+// Your existing rules remain the same
+
+// Code chunk styling
+.reveal div.sourceCode {
+  background-color: $code-block-bg;
+  border-radius: 4px;
+  margin-bottom: 1em;
+}
+
+.reveal pre code {
+  background-color: transparent;
+  padding: 0.5em;
+}
+
+// Syntax highlighting colors
+.reveal .sourceCode {
+  .fu {
+    color: $rust;
+  }
+
+  .st {
+    color: $forest;
+  }
+
+  .fl, .dv {
+    color: darken($rust, 10%);
+  }
+
+  .co {
+    color: lighten($charcoal, 40%);
+    font-style: italic;
+  }
+
+  .va, .at {
+    color: darken($forest, 5%);
+  }
+
+  .kw {
+    color: $rust;
+    font-weight: 500;
+  }
+
+  .op {
+    color: $charcoal;
+  }
+
+  .cn {
+    color: darken($forest, 10%);
+  }
+}

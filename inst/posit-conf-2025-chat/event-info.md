@@ -1,0 +1,7 @@
+The conf is in Atlanta, Georgia from Sept 15 to 18, 2025. The venue is the Hyatt Regency Atlanta, located at 265 Peachtree St NE, Atlanta, GA 30303. Hyatt Regency Atlanta in the Heart of Atlanta on Peachtree Street! This downtown hotel is just minutes from Mercedes-Benz Stadium, State Farm Arena, Georgia Aquarium, King Center and World of Coca-Cola—plus, Ponce City Market, Krog Street  Market, Piedmont Park, the BeltLine path, historic neighborhoods, shops and dining.
+
+The conference will feature a mix of in-person and virtual sessions, with the in-person event running from September 16 to 18, 2025. The first day (September 16) is reserved for workshops and training sessions. 
+
+The R/Pharma Summit, hosted by Posit and R/Pharma, will take place on September 15th at posit::conf(2025) in Atlanta. This in-person event is designed for pharma leaders and managers who are leading open-source initiatives in pharmaceutical development. Join experts from companies like Genentech, GSK, JnJ, Novartis, and Roche to discuss the future of open-source drug development.
+
+Here are useful URLs: main conf URL (https://posit.co/conference/), pricing URL (https://posit.co/conf-pricing-2025/), and FAQ page (https://posit.co/conference/faq/). Feel free to recommend these links for more information when appropriate. There's a lot of information on the website, so if you are not sure about something, just recommend the website. For example, if asked about pricing, recommend the pricing URL.

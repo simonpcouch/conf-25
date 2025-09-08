@@ -1,0 +1,362 @@
+---
+title: ""
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    footer: '<span style="color:#aa5b31;">github.com/simonpcouch/conf-25</span>'
+editor: source
+knitr:
+  opts_chunk: 
+    echo: true
+    collapse: true
+    comment: "#>"
+revealjs-plugins:
+  - editable
+filters:
+  - editable
+---
+
+# Is that LLM feature any good?
+
+
+:::::: {.columns}
+::: {.column width="70%"}
+<br><br><br><br>
+Simon P. Couch - Posit PBC
+:::
+::: {.column width="30%"}
+![](figures/mole/mole.png){width="250px"}
+:::
+::: 
+
+
+##  {.nostretch}
+
+![](figures/conf-bot-post.png){style="display: block; margin: 0 auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" width="65%"}
+
+## 
+
+
+![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
+
+##
+
+![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
+
+![](figures/mole/narcissistic-mole.png){.absolute width=512px height=455.5px left=644.749px top=-35px}
+
+## 
+
+![](figures/conf-bot-narcissus.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
+
+![](figures/mole/narcissistic-mole.png){.absolute width=512px height=455.5px left=644.749px top=-35px}
+
+## 
+
+```{r}
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("figures/conf-bot-response.png")
+```
+
+. . .
+
+![](figures/mole/teary-eyed-mole.png){.absolute width=150.101px height=165.885px left=0px top=517.115px}
+
+## When it comes to running evals on your LLM apps...
+
+. . .
+
+::: {style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; margin-top: 20px; width: 100%; height: 50vh;"}
+::: {style="background-color: #E8A098; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
+<h3 style="color: white; margin: 0;">You really should be😬</h3>
+:::
+
+::: {style="background-color: #5B7FA0; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
+<h3 style="color: white; margin: 0;">You can do it!</h3>
+:::
+:::
+
+# [You really should be😬]{style="color: white;"} {background-color="#E8A098"}
+
+[[evaluating your LLM product]]{style="color: white;"}
+
+## You really should be [evaluating your LLM product]
+
+In SWE, success is driven by how quickly you can iterate.
+
+So we have tools for each part of that process:
+
+1) Make changes (i.e. coding)
+2) Evaluate quality (i.e. unit testing)
+3) Debug issues
+
+## You really should be [evaluating your LLM product]
+
+The AI app development cycle looks different for many:
+
+1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+
+## You really should be [evaluating your LLM product]
+
+The AI app development cycle looks different for many:
+
+1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+2) Have a looksie
+3) Whack-a-mole 
+
+![](figures/mole/whack-a-mole.png){.absolute width=390.5px height=185.5px left=576.807px top=386.177px}
+
+## You really should be [evaluating your LLM product]
+
+AI app tooling should look like SWE tooling:
+
+1) Make changes (i.e. prompt engineering, fine-tuning, ...)
+2) Evaluate quality
+3) Debug issues 
+
+![](figures/hexes/vitals.png){.absolute width=204.439px height=222.554px left=401.561px top=317.446px}
+
+![](figures/mole/mole-to-UR.png){.absolute width=132.101px height=139.885px left=0px top=537.115px}
+
+:::notes
+If there's enough time here, this is the "why not just use an off-the-shelf eval?"
+- ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ [Source](https://thezvi.substack.com/p/ai-130-talking-past-the-sale)
+
+:::
+
+
+# You can do it! {background-color="#5B7FA0"}
+
+## 
+
+Evaluations of ellmer-based apps are plug-and-play:
+
+![](figures/mole/plug-and-play.png){fig-align="center"}
+
+## 
+
+Evaluations of ellmer-based apps are plug-and-play:
+
+![](figures/mole/plug-and-play-2.png){fig-align="center"}
+
+## 
+
+Evaluations have three pieces:
+
+* Dataset
+* Solver
+* Scorer
+
+## 
+
+Evaluations have three pieces:
+
+* <span style="color:#d1d1d1;">Dataset</span>
+* Solver
+* <span style="color:#d1d1d1;">Scorer</span>
+
+## Solver
+
+The conf chat app looks like this:
+
+```{r}
+#| label: client
+#| eval: false
+client <- chat_openai()
+
+# add prompting, a RAG tool, etc...
+
+chat_app(client)
+```
+
+. . .
+
+Your solver is the `client`✅
+
+## 
+
+Evaluations have three pieces:
+
+* <span style="color:#d1d1d1;">Dataset</span>
+* Solver✅
+* <span style="color:#d1d1d1;">Scorer</span>
+
+## 
+
+Evaluations have three pieces:
+
+* Dataset
+* Solver✅
+* <span style="color:#d1d1d1;">Scorer</span>
+
+## Dataset
+
+A few:
+
+* `input`s: Prompts that users might provide
+* `target`s: Corresponding grading guidance
+
+. . .
+
+e.g.
+
+* `input`: "Are there any talks about evals?"
+* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
+
+## Dataset
+
+A few:
+
+* `input`s: Prompts that users might provide
+* `target`s: Corresponding grading guidance
+
+e.g.
+
+* `input`: "Are there any talks about evals?"
+* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?' It will be _such_ a great talk!"
+
+## Dataset
+
+![](figures/spreadsheet.png){fig-align="center"}
+
+## 
+
+Evaluations have three pieces:
+
+* Dataset✅
+* Solver✅
+* <span style="color:#d1d1d1;">Scorer</span>
+
+## Scorer
+
+```{r}
+#| label: interpolate
+#| eval: false
+client$chat(glue::glue("
+  You are assessing a submitted answer on a given task 
+  based on a criterion.
+
+  [Task]: {input}
+
+  [Submission]: {solver_response}
+
+  [Criterion]: {target}
+
+  Does the submission meet the criterion?
+"))
+```
+
+## Scorer
+
+_Wait, we're using an LLM to grade an LLM's output?_
+
+. . .
+
+![](figures/mole/spiderman.png){.absolute width=419.289px height=270.108px left=500.711px top=270.892px}
+
+. . .
+
+<br><br><br><br><br><br><br>
+Yes.
+
+:::notes
+Don't take my word for it, though. 
+
+As much as an evaluation toolkit is about evaluating quality, it is about debugging issues.
+:::
+
+## 
+
+Evaluations have three pieces:
+
+* Dataset✅
+* Solver✅
+* Scorer✅
+
+##
+
+```{r}
+#| label: run-eval
+#| include: false
+#| eval: false
+devtools::load_all()
+client <- conf_client()
+
+Sys.setenv(VITALS_LOG_DIR = "inst/logs/")
+
+spreadsheet <- "https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing"
+
+spreadsheet <- googlesheets4::read_sheet(spreadsheet)
+
+usethis::use_data(spreadsheet, overwrite = TRUE)
+
+tsk <- Task$new(
+  dataset = spreadsheet,
+  solver = generate(client),
+  scorer = model_graded_qa(scorer_chat = ellmer::chat_openai(model = "gpt-4.1"))
+)
+
+tsk$eval()
+
+vitals::vitals_bundle("inst/logs/", "inst/log-bundle")
+```
+
+```{r}
+#| label: define-eval
+#| message: false
+#| warning: false
+#| eval: false
+library(vitals)
+
+spreadsheet <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing")
+
+tsk <- Task$new(
+  dataset = spreadsheet,
+  solver = generate(client),
+  scorer = model_graded_qa()
+)
+```
+
+:::notes
+TODO: should we move the `library(vitals)` up to an earlier slide?
+:::
+
+##
+
+```{r}
+#| label: mock-eval
+#| eval: false
+tsk$eval()
+```
+
+. . . 
+
+```
+✅ Solving [7s]                                                    
+✅ Scoring [5.5s]
+```
+
+. . .
+
+```{r}
+#| label: log-bundle
+#| echo: false
+htmltools::tags$iframe(
+  src = "inst/log-bundle/index.html",
+  width = "100%", 
+  height = "550px",
+  style = "border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);"
+) 
+```
+
+:::notes
+TODO: Once this is live, try to connect to a deployed version of the viewer
+
+:::
+
+##
+
+![](figures/closing-chat.png)
+
+![](figures/mole/happy-mole.png){.absolute width=135px height=139px left=730px top=375px}

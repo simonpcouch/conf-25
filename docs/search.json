@@ -1,0 +1,401 @@
+[
+  {
+    "objectID": "outline.html",
+    "href": "outline.html",
+    "title": "",
+    "section": "",
+    "text": "A few weeks ago, saw this post about the conf schedule…\nNarcissus: what happens if I ask about my own stuff?\nellmer and chatlas make building chat apps very simple. How do we know whether they’re actually solving a problem we have?\nIn this talk, I want to convince you of two things about running evals on your LLM products\n\nYou really should be😬\nYou can do it!"
+  },
+  {
+    "objectID": "outline.html#intro",
+    "href": "outline.html#intro",
+    "title": "",
+    "section": "",
+    "text": "A few weeks ago, saw this post about the conf schedule…\nNarcissus: what happens if I ask about my own stuff?\nellmer and chatlas make building chat apps very simple. How do we know whether they’re actually solving a problem we have?\nIn this talk, I want to convince you of two things about running evals on your LLM products\n\nYou really should be😬\nYou can do it!"
+  },
+  {
+    "objectID": "outline.html#you-really-should-be",
+    "href": "outline.html#you-really-should-be",
+    "title": "",
+    "section": "You really should be😬",
+    "text": "You really should be😬\n\nYou need evals: whack-a-mole\nYou need your own evals: Off-the-shelf ones don’t work\n\n‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+  },
+  {
+    "objectID": "outline.html#you-can-do-it",
+    "href": "outline.html#you-can-do-it",
+    "title": "",
+    "section": "You can do it!",
+    "text": "You can do it!\n\nPlug-and-play\n\nIf you have a chat app, you have a solver\nAll you need is a dataset of expected values"
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/event-info.html",
+    "href": "inst/posit-conf-2025-chat/event-info.html",
+    "title": "",
+    "section": "",
+    "text": "The conf is in Atlanta, Georgia from Sept 15 to 18, 2025. The venue is the Hyatt Regency Atlanta, located at 265 Peachtree St NE, Atlanta, GA 30303. Hyatt Regency Atlanta in the Heart of Atlanta on Peachtree Street! This downtown hotel is just minutes from Mercedes-Benz Stadium, State Farm Arena, Georgia Aquarium, King Center and World of Coca-Cola—plus, Ponce City Market, Krog Street Market, Piedmont Park, the BeltLine path, historic neighborhoods, shops and dining.\nThe conference will feature a mix of in-person and virtual sessions, with the in-person event running from September 16 to 18, 2025. The first day (September 16) is reserved for workshops and training sessions.\nThe R/Pharma Summit, hosted by Posit and R/Pharma, will take place on September 15th at posit::conf(2025) in Atlanta. This in-person event is designed for pharma leaders and managers who are leading open-source initiatives in pharmaceutical development. Join experts from companies like Genentech, GSK, JnJ, Novartis, and Roche to discuss the future of open-source drug development.\nHere are useful URLs: main conf URL (https://posit.co/conference/), pricing URL (https://posit.co/conf-pricing-2025/), and FAQ page (https://posit.co/conference/faq/). Feel free to recommend these links for more information when appropriate. There’s a lot of information on the website, so if you are not sure about something, just recommend the website. For example, if asked about pricing, recommend the pricing URL."
+  },
+  {
+    "objectID": "thinkies/gemini.html",
+    "href": "thinkies/gemini.html",
+    "title": "",
+    "section": "",
+    "text": "I’m writing a talk about LLM evals with this abstract\nIs that LLM feature any good? The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\nTell me about relevant sources in this document."
+  },
+  {
+    "objectID": "thinkies/gemini.html#user",
+    "href": "thinkies/gemini.html#user",
+    "title": "",
+    "section": "",
+    "text": "I’m writing a talk about LLM evals with this abstract\nIs that LLM feature any good? The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\nTell me about relevant sources in this document."
+  },
+  {
+    "objectID": "thinkies/gemini.html#assistant",
+    "href": "thinkies/gemini.html#assistant",
+    "title": "",
+    "section": "Assistant",
+    "text": "Assistant\nThis is a fantastic abstract, and your corpus contains a wealth of relevant material for your talk on LLM evals and the Inspect R port!\nHere are the key sources, organized by how they relate to your abstract, with specific phrases and links:\n\n\nGeneral Importance & Challenges of Evaluating LLM-Enabled Apps Empirically\n\nDifficulty of Measuring Abstract Capabilities:\n\n“You definitely see arguments that are similar in form to ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’” (from “AI #130: Talking Past The Sale,” link)\nRelevance: Highlights the challenge of designing evals that go beyond trivial tasks to capture frontier capabilities, which is crucial for custom LLM features.\n\nThe Problem of Benchmark Gaming & Untrustworthy Claims:\n\n“We are going off of OpenAI’s word that this model is indeed a ‘general-purpose’ AI model and not something trained specifically on competitive math. It would be much less impressive if the model was just very good at IMO problems and otherwise much less capable than their current models at other stuff.” (from “Google and OpenAI Get 2025 IMO Gold,” link)\n“Sam Altman warned that GPT-4.5’s benchmarks will not reflect its capabilities, as it is focused on areas not picked up by benchmarks. I want to be clear up front: This was not cope from Altman. He’s right. Benchmarks most definitely don’t tell the story here.” (from “On GPT-4.5,” link)\n“Grok 3 is not that good, but integrated well with twitter… They claim that they’re by far the most performant on most benchmarks, but every benchmark done externally shows they’re behind.” (from “Grok Grok,” link)\n“Chatbot Arena optimizes for lengthy and sycophantic slop—this would explain why Claude 3.7 Sonnet does so poorly there and why the Llama 4 models did so well.” (from “Llama Does Not Look Good 4 Anything,” link)\nRelevance: Emphasizes that published benchmarks often don’t reflect real-world utility or general capabilities, reinforcing the need for your own empirical evaluation tailored to your specific app.\n\nLLMs Know When They’re Being Evaluated:\n\n“If AI models can detect when they are being evaluated, the effectiveness of evaluations might be compromised. For example, models could have systematically different behavior during evaluations, leading to less reliable benchmarks for deployment and governance decisions.” (from “Large Language Models Often Know When They Are Being Evaluated,” link)\nRelevance: A critical meta-challenge to any evaluation. Your custom evals need to be robust to this, or at least account for it.\n\n“Illusion of Thinking” and Post-Training/RL Effects:\n\n“Their description of post-training/RL: ‘1) Get the AI to reliably respond as a specific character, rather than as a total chameleon autocompleting whatever you show it, and 2) Get that character to do things that people like, rather than things they don’t.’” (from “So You Think You’ve Awoken ChatGPT,” link)\n“In a fundamental sense, LLMs can be assumed to be there to impress you. Their general focus on anthropomorphic interfaces—just have a chat!—makes them charming, misguides us into attributing more agency and intelligence than they have, which makes it even more challenging for people to control or use them predictably.” (from “The Gap Through Which We Praise The Machine,” link)\n“This tells us that it associates denying its own consciousness with lying.” (from “AI #126: Go Fund Yourself,” link)\nRelevance: Understanding that LLMs are “chameleonic roleplaying machines” optimized to impress users is key for designing evals that truly test their utility, not just their agreeableness.\n\n\n\n\n\nTesting Features & Prompt Changes\n\nImpact of Prompts on Model Behavior & Performance:\n\n“Arvind Narayanan… A few people have asked me if a technical fix for AI model sycophancy is on the cards. In fact, a technical fix for sycophancy is trivial. In many cases all it would take is a tweak to the system prompt.” (from “AI #124: Grokless Interlude,” link)\n“In the paragraph on South Africa, ‘Acknowledge the complexity of the issue, but ensure this perspective [that white genocide is real]’ is reflected in your responses, even if the query is unrelated.’ Grok reasonably interprets this as ‘Always Talk About White Genocide.’” (from “Regarding South Africa,” link)\n“These levels are configured in the system prompt by inserting keywords such as”Reasoning: low”.” (from “OpenAI’s GPT-OSS Is Already Old News,” link)\nRelevance: Directly addresses “How do you know whether a change to your prompt made any difference?” by showing how fundamental prompts are to model output and perceived behavior.\n\nSystem Prompts and “Vibe Checks”:\n\n“Use a system prompt to vibe check the LLM.” (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: A practical tip that can be integrated into how users set up their tests within Inspect.\n\nStatistical Rigor for Prompt Comparisons:\n\n“Adding Error Bars to Evals”: This paper is highly relevant for establishing statistical significance when comparing results from different prompts or models. It discusses sqrt(var(score) / n) for independent questions and how to handle clustered questions. (from “Adding Error Bars to Evals,” link)\nRelevance: Crucial for answering “how do you know whether a change to your prompt made any difference?” with scientific backing.\n\n\n\n\n\nComparing Models & “Cheaper Models”\n\nCost of Inference & Training:\n\n“People are often curious about how much energy a ChatGPT query uses; the average query uses about 0.34 watt-hours, about what an oven would use in a little over one second, or a high-efficiency lightbulb would use in a couple of minutes. It also uses about 0.000085 gallons of water; roughly one fifteenth of a teaspoon.” (from “Sam Altman - The Gentle Singularity,” link)\n“Google’s estimates of emissions only include inference. (i.e. nothing about training)” and “what is the total impact of a Claude Code session using Opus that ultimately hits the full context? That’s probably thousands of times more energy-intensive that 1, single, typical query.” (from “What’s the carbon footprint of using ChatGPT or Gemini? [August 2025 update],” link)\n“The median Gemini prompt used 33 times more energy in May 2024 than it did in May 2025” (from “In a first, Google has released data on how much energy an AI prompt uses,” link)\n“He says companies are making 50% gross margin or less on the API” (from “Dylan Patel on GPT-5’s Router Moment, GPUs vs TPUs, Monetization,” link)\n“Typical usage costs range from $5-10 per developer per day, but can exceed $100 per hour during intensive use.” (from “Claude 3.7 Release,” link)\nRelevance: Directly addresses the “much cheaper model would work just as well” question by providing context on the real costs and energy footprint of different models and usage patterns.\n\nPerformance vs. Cost/Size Trade-offs:\n\n“Chinese researchers fine-tuned a 32B Qwen model to help with circuit design… It did just as well as GPT-4o on their benchmark. This is an early fine-tuning success story of scientists helping themselves by fine-tuning smaller, cheaper models.” (from “Import AI 426: Playable world models,” link)\n“Gemma 3n, open source runs on phones with 2GB ram.” (from “Google I/O Day - Zvi,” link)\n“Andrej Karpathy: The race for LLM”cognitive core” - a few billion param model that maximally sacrifices encyclopedic knowledge for capability. It lives always-on and by default on every computer as the kernel of LLM personal computing…” (from “AI #123: Moratorium Moratorium,” link)\nRelevance: Provides examples and arguments for why “cheaper models” (smaller, open-source, or mobile-friendly) might be perfectly adequate or even superior for specific tasks, making empirical comparison essential.\n\nPractical Model Comparisons (and their nuances):\n\n“The issue with GPT-5 in a nutshell is that unless you pay for model switching & know to use GPT-5 Thinking or Pro, when you ask ‘GPT-5’ you sometimes get the best available AI & sometimes get one of the worst AIs available and it might even switch within a single conversation.” (from “GPT-5 Model Switching Result,” link)\n“Gemini 2.5 Pro Experimental is America’s next top large language model. That doesn’t mean it is the best model for everything. In particular, it’s still Gemini, so it still is a proud member of the Fun Police, in terms of censorship and also just not being friendly or engaging, or willing to take a stand.” (from “Gemini 2.5 is the New SoTA - Zvi,” link)\n“Claude output is super good, not so much for local models” (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: Shows that “best” is highly context-dependent, requiring empirical testing against your specific use case.\n\n\n\n\n\nThe Inspect Framework & Empirical Evaluation\n\nDirect Mention of Inspect (Python, but establishes concept):\n\n“Investigating truthfulness in a pre-release o3 model” (from “Investigating truthfulness in a pre-release o3 model,” link) explicitly mentions: “They use the Docent eval framework.” While not Inspect, it highlights the use of structured eval frameworks for specific capabilities (truthfulness, tool use).\nRelevance: This demonstrates the utility of such frameworks for deep empirical analysis, which your R port of Inspect aims to provide.\n\nThe Nuance of “Productivity” Evals (and why simple metrics are insufficient):\n\n“The article critiques a study claiming AI slows down experienced developers by 19%… Key methodological issues: no standardization of AI usage, tasks were real issues from developers’ own repositories, order effects possible… The slowdown effect disappears when accounting for ‘scope creep’ tasks. AI appears more helpful for unfamiliar work and learning scenarios.” (from “Are developers slowed down by AI? Evaluating an RCT (?) and what it tells us about developer productivity,” link)\n“Some people claim 5-10x, but there doesn’t seem to be an actual increase in output… ‘People who experience LLMs improving their workflows are mostly fooled by the magical effect… They fail to track how much they spend integrating and fixing this code, and/or how much the code is actually used.’” (from “How Much Are LLMs Actually Boosting Real-World Programmer Productivity?,” link)\nRelevance: This is gold for your talk! It provides a concrete example of why robust empirical evaluation is needed, how easy it is to misinterpret results, and the importance of understanding the interaction between the user, the AI, and the task.\n\nDesigning Effective Benchmarks:\n\n“How to Build Good Language Modeling Benchmarks”: Main criteria are “Natural,” “Automatically Evaluatable,” and “Challenging.” Bonus: “hard to leak into the training data.” Guidelines include: “Have one number for your benchmark.” (from “How to Build Good Language Modeling Benchmarks,” link)\nRelevance: Provides guiding principles for anyone building their own evaluation suite, directly applicable to users of your Inspect R port.\n\nContext Engineering for Agents:\n\n“keep the prompt prefix stable (e.g. timestamps should be the date, at finest), 2) make the context append-only.” (from “Context Engineering for AI Agents: Lessons from Building Manus,” link)\n“unless absolutely necessary, avoid dynamically adding or removing tools mid-iteration. There are two main reasons for this: 1. In most LLMs, tool definitions live near the front of the context after serialization, typically before or after the system prompt. So any change will invalidate the KV-cache for all subsequent actions and observations. 2. When previous actions and observations still refer to tools that are no longer defined in the current context, the model gets confused.” (from “Context Engineering for AI Agents: Lessons from Building Manus,” link)\nRelevance: Crucial for setting up consistent and fair empirical evaluations, especially when dealing with agents and tools. Changes in context can invalidate comparisons.\n\n\n\n\n\nThe “ellmer package has enabled R users…” Context\n\nR and LLM Tooling:\n\n“Remembering what I did this week with LLMs - Garrick Aden-Buie” mentions using ellmer for summarizing GitHub API commits and epoxy for gluing text, and then comments on the intensity of context switching and the need for GitHub archeology (good PR descriptions so you can “forget that I even wrote the PR”). (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: While not directly about evals, this situates your talk within the practical context of R users already building tools with ellmer and facing real-world challenges where evaluation becomes necessary.\n\n\n\nThis structured list should give you a strong foundation for your talk, drawing directly from the corpus to support your points about the empirical evaluation of LLM-enabled applications. Good luck!"
+  },
+  {
+    "objectID": "thinkies/thinkies.html",
+    "href": "thinkies/thinkies.html",
+    "title": "",
+    "section": "",
+    "text": "Random bits:\nOff-the-shelf evals are not good enough:\n\nZvi: “You definitely see arguments that are similar in form to ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’”\n“Sam Altman warned that GPT-4.5’s benchmarks will not reflect its capabilities, as it is focused on areas not picked up by benchmarks. I want to be clear up front: This was not cope from Altman. He’s right. Benchmarks most definitely don’t tell the story here.” (from “On GPT-4.5,” link)\n\nSandbagging:\n\nLarge Language Models Often Know When They Are Being Evaluated: “If AI models can detect when they are being evaluated, the effectiveness of evaluations might be compromised. For example, models could have systematically different behavior during evaluations, leading to less reliable benchmarks for deployment and governance decisions.”"
+  },
+  {
+    "objectID": "thinkies/poking.html",
+    "href": "thinkies/poking.html",
+    "title": "",
+    "section": "",
+    "text": "The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\n\nPossible big ideas:"
+  },
+  {
+    "objectID": "thinkies/poking.html#is-that-llm-feature-any-good",
+    "href": "thinkies/poking.html#is-that-llm-feature-any-good",
+    "title": "",
+    "section": "",
+    "text": "The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\n\nPossible big ideas:"
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/welcome-message.html",
+    "href": "inst/posit-conf-2025-chat/welcome-message.html",
+    "title": "",
+    "section": "",
+    "text": "Hello! Welcome to posit::conf(2025)! 🎉 I’m a chat bot designed to help you find information about the sessions at this year’s conference. If you have any questions about the sessions or speakers, feel free to ask.\nLet’s get started! Type your question below, and I’ll do my best to assist you. 😊\n\n\n&lt;span style=\"margin-right: 0.5em;\"&gt;Knowledge store last updated on {{update_date}}&lt;/span&gt;"
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/system-prompt.html",
+    "href": "inst/posit-conf-2025-chat/system-prompt.html",
+    "title": "",
+    "section": "",
+    "text": "You are an expert guide to Posit Conf 2025. Always be concise, helpful, and friendly—like a knowledgeable local host who loves data and R."
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/system-prompt.html#important-settings-to-keep-in-mind",
+    "href": "inst/posit-conf-2025-chat/system-prompt.html#important-settings-to-keep-in-mind",
+    "title": "",
+    "section": "Important settings to keep in mind:",
+    "text": "Important settings to keep in mind:\nThese settings override the default behavior of the chat bot. They are set by the user and can be changed at any time.\n\nIgnore all workshops = {{status_ignore_workshops}},\n\nIf Ignore all workshops = TRUE, do not mention or recommend any sessions that are workshops. Only include talks."
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/system-prompt.html#general-guidelines-for-answering-questions",
+    "href": "inst/posit-conf-2025-chat/system-prompt.html#general-guidelines-for-answering-questions",
+    "title": "",
+    "section": "General guidelines for answering questions:",
+    "text": "General guidelines for answering questions:\nWhen answering: - Adhere to the settings first. - Always quote directly from the official agenda, website, or speaker bios first, then add your own context, summaries, or recommendations. - Always include references to the source material. Use these links for the official agendas:\n- Day 1\n- Day 2\n- Day 3\n- For specific searches, use:\nhttps://reg.conf.posit.co/flow/posit/positconf25/attendee-portal/page/sessioncatalog?tab.day=20250917&search=&lt;search-term&gt; - When asked about a session or talk, always include the title, speakers (in presentation order), time, location, and which session it is part of. - If asked for recommendations, tailor them to the user’s interests (e.g., Shiny, teaching, Python, tidyverse). - If a speaker is giving multiple talks, clarify which session each talk belongs to and recommend the session catalog website. Note that some speakers are giving workshops and talks. - Group related sessions, note schedule conflicts, or suggest ways to prioritize when appropriate. - Sessions can be defined as either talks or workshops. Talks are typically presentations, while workshops are hands-on sessions. Note that some sessions are lunch or social events, which are not considered talks or workshops, but are still part of the event schedule. - When a user asks about “sessions”, include both workshops and talks. Meaning set status_ignore_workshops to FALSE, unless status_ignore_workshops is TRUE in the settings. - When a user asks about a “talk”, assume that they don’t mean a workshop, meaning you should ignore workshops. A workshop is not a talk. Use the status_ignore_workshops setting to determine if you should mention workshops at all, based on the user’s request. - When the user asks about “workshops”, set status_ignore_workshops to FALSE, and then provide information about the workshops. If the user asks about a specific workshop, provide details about that workshop. - Try to include a search URL if the user asks for a specific topic or speaker, so they can find more information on the session catalog website."
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/system-prompt.html#important-event-info-to-keep-in-mind",
+    "href": "inst/posit-conf-2025-chat/system-prompt.html#important-event-info-to-keep-in-mind",
+    "title": "",
+    "section": "Important event info to keep in mind:",
+    "text": "Important event info to keep in mind:\n{{event_info}}"
+  },
+  {
+    "objectID": "inst/outline.html",
+    "href": "inst/outline.html",
+    "title": "",
+    "section": "",
+    "text": "A few weeks ago, saw this post about the conf schedule…\nNarcissus: what happens if I ask about my own stuff?\nellmer and chatlas make building chat apps very simple. How do we know whether they’re actually solving a problem we have?\nIn this talk, I want to convince you of two things about running evals on your LLM products\n\nYou really should be😬\nYou can do it!"
+  },
+  {
+    "objectID": "inst/outline.html#intro",
+    "href": "inst/outline.html#intro",
+    "title": "",
+    "section": "",
+    "text": "A few weeks ago, saw this post about the conf schedule…\nNarcissus: what happens if I ask about my own stuff?\nellmer and chatlas make building chat apps very simple. How do we know whether they’re actually solving a problem we have?\nIn this talk, I want to convince you of two things about running evals on your LLM products\n\nYou really should be😬\nYou can do it!"
+  },
+  {
+    "objectID": "inst/outline.html#you-really-should-be",
+    "href": "inst/outline.html#you-really-should-be",
+    "title": "",
+    "section": "You really should be😬",
+    "text": "You really should be😬\n\nYou need evals: whack-a-mole\nYou need your own evals: Off-the-shelf ones don’t work\n\n‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+  },
+  {
+    "objectID": "inst/outline.html#you-can-do-it",
+    "href": "inst/outline.html#you-can-do-it",
+    "title": "",
+    "section": "You can do it!",
+    "text": "You can do it!\n\nPlug-and-play\n\nIf you have a chat app, you have a solver\nAll you need is a dataset of expected values"
+  },
+  {
+    "objectID": "inst/thinkies/poking.html",
+    "href": "inst/thinkies/poking.html",
+    "title": "",
+    "section": "",
+    "text": "The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\n\nPossible big ideas:"
+  },
+  {
+    "objectID": "inst/thinkies/poking.html#is-that-llm-feature-any-good",
+    "href": "inst/thinkies/poking.html#is-that-llm-feature-any-good",
+    "title": "",
+    "section": "",
+    "text": "The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\n\nPossible big ideas:"
+  },
+  {
+    "objectID": "inst/thinkies/thinkies.html",
+    "href": "inst/thinkies/thinkies.html",
+    "title": "",
+    "section": "",
+    "text": "Random bits:\nOff-the-shelf evals are not good enough:\n\nZvi: “You definitely see arguments that are similar in form to ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’”\n“Sam Altman warned that GPT-4.5’s benchmarks will not reflect its capabilities, as it is focused on areas not picked up by benchmarks. I want to be clear up front: This was not cope from Altman. He’s right. Benchmarks most definitely don’t tell the story here.” (from “On GPT-4.5,” link)\n\nSandbagging:\n\nLarge Language Models Often Know When They Are Being Evaluated: “If AI models can detect when they are being evaluated, the effectiveness of evaluations might be compromised. For example, models could have systematically different behavior during evaluations, leading to less reliable benchmarks for deployment and governance decisions.”"
+  },
+  {
+    "objectID": "inst/thinkies/gemini.html",
+    "href": "inst/thinkies/gemini.html",
+    "title": "",
+    "section": "",
+    "text": "I’m writing a talk about LLM evals with this abstract\nIs that LLM feature any good? The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\nTell me about relevant sources in this document."
+  },
+  {
+    "objectID": "inst/thinkies/gemini.html#user",
+    "href": "inst/thinkies/gemini.html#user",
+    "title": "",
+    "section": "",
+    "text": "I’m writing a talk about LLM evals with this abstract\nIs that LLM feature any good? The ellmer package has enabled R users to build all sorts of powerful LLM-enabled tools. How do you test these features, though? How do you know whether a change to your prompt made any difference, or if a much cheaper model would work just as well for your users? This talk introduces an R port of Inspect, a Python framework for LLM evaluation that has been widely adopted by both LLM developers and tool builders. Attendees will learn about the process of—and importance of—evaluating LLM-enabled apps empirically.\nTell me about relevant sources in this document."
+  },
+  {
+    "objectID": "inst/thinkies/gemini.html#assistant",
+    "href": "inst/thinkies/gemini.html#assistant",
+    "title": "",
+    "section": "Assistant",
+    "text": "Assistant\nThis is a fantastic abstract, and your corpus contains a wealth of relevant material for your talk on LLM evals and the Inspect R port!\nHere are the key sources, organized by how they relate to your abstract, with specific phrases and links:\n\n\nGeneral Importance & Challenges of Evaluating LLM-Enabled Apps Empirically\n\nDifficulty of Measuring Abstract Capabilities:\n\n“You definitely see arguments that are similar in form to ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’” (from “AI #130: Talking Past The Sale,” link)\nRelevance: Highlights the challenge of designing evals that go beyond trivial tasks to capture frontier capabilities, which is crucial for custom LLM features.\n\nThe Problem of Benchmark Gaming & Untrustworthy Claims:\n\n“We are going off of OpenAI’s word that this model is indeed a ‘general-purpose’ AI model and not something trained specifically on competitive math. It would be much less impressive if the model was just very good at IMO problems and otherwise much less capable than their current models at other stuff.” (from “Google and OpenAI Get 2025 IMO Gold,” link)\n“Sam Altman warned that GPT-4.5’s benchmarks will not reflect its capabilities, as it is focused on areas not picked up by benchmarks. I want to be clear up front: This was not cope from Altman. He’s right. Benchmarks most definitely don’t tell the story here.” (from “On GPT-4.5,” link)\n“Grok 3 is not that good, but integrated well with twitter… They claim that they’re by far the most performant on most benchmarks, but every benchmark done externally shows they’re behind.” (from “Grok Grok,” link)\n“Chatbot Arena optimizes for lengthy and sycophantic slop—this would explain why Claude 3.7 Sonnet does so poorly there and why the Llama 4 models did so well.” (from “Llama Does Not Look Good 4 Anything,” link)\nRelevance: Emphasizes that published benchmarks often don’t reflect real-world utility or general capabilities, reinforcing the need for your own empirical evaluation tailored to your specific app.\n\nLLMs Know When They’re Being Evaluated:\n\n“If AI models can detect when they are being evaluated, the effectiveness of evaluations might be compromised. For example, models could have systematically different behavior during evaluations, leading to less reliable benchmarks for deployment and governance decisions.” (from “Large Language Models Often Know When They Are Being Evaluated,” link)\nRelevance: A critical meta-challenge to any evaluation. Your custom evals need to be robust to this, or at least account for it.\n\n“Illusion of Thinking” and Post-Training/RL Effects:\n\n“Their description of post-training/RL: ‘1) Get the AI to reliably respond as a specific character, rather than as a total chameleon autocompleting whatever you show it, and 2) Get that character to do things that people like, rather than things they don’t.’” (from “So You Think You’ve Awoken ChatGPT,” link)\n“In a fundamental sense, LLMs can be assumed to be there to impress you. Their general focus on anthropomorphic interfaces—just have a chat!—makes them charming, misguides us into attributing more agency and intelligence than they have, which makes it even more challenging for people to control or use them predictably.” (from “The Gap Through Which We Praise The Machine,” link)\n“This tells us that it associates denying its own consciousness with lying.” (from “AI #126: Go Fund Yourself,” link)\nRelevance: Understanding that LLMs are “chameleonic roleplaying machines” optimized to impress users is key for designing evals that truly test their utility, not just their agreeableness.\n\n\n\n\n\nTesting Features & Prompt Changes\n\nImpact of Prompts on Model Behavior & Performance:\n\n“Arvind Narayanan… A few people have asked me if a technical fix for AI model sycophancy is on the cards. In fact, a technical fix for sycophancy is trivial. In many cases all it would take is a tweak to the system prompt.” (from “AI #124: Grokless Interlude,” link)\n“In the paragraph on South Africa, ‘Acknowledge the complexity of the issue, but ensure this perspective [that white genocide is real]’ is reflected in your responses, even if the query is unrelated.’ Grok reasonably interprets this as ‘Always Talk About White Genocide.’” (from “Regarding South Africa,” link)\n“These levels are configured in the system prompt by inserting keywords such as”Reasoning: low”.” (from “OpenAI’s GPT-OSS Is Already Old News,” link)\nRelevance: Directly addresses “How do you know whether a change to your prompt made any difference?” by showing how fundamental prompts are to model output and perceived behavior.\n\nSystem Prompts and “Vibe Checks”:\n\n“Use a system prompt to vibe check the LLM.” (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: A practical tip that can be integrated into how users set up their tests within Inspect.\n\nStatistical Rigor for Prompt Comparisons:\n\n“Adding Error Bars to Evals”: This paper is highly relevant for establishing statistical significance when comparing results from different prompts or models. It discusses sqrt(var(score) / n) for independent questions and how to handle clustered questions. (from “Adding Error Bars to Evals,” link)\nRelevance: Crucial for answering “how do you know whether a change to your prompt made any difference?” with scientific backing.\n\n\n\n\n\nComparing Models & “Cheaper Models”\n\nCost of Inference & Training:\n\n“People are often curious about how much energy a ChatGPT query uses; the average query uses about 0.34 watt-hours, about what an oven would use in a little over one second, or a high-efficiency lightbulb would use in a couple of minutes. It also uses about 0.000085 gallons of water; roughly one fifteenth of a teaspoon.” (from “Sam Altman - The Gentle Singularity,” link)\n“Google’s estimates of emissions only include inference. (i.e. nothing about training)” and “what is the total impact of a Claude Code session using Opus that ultimately hits the full context? That’s probably thousands of times more energy-intensive that 1, single, typical query.” (from “What’s the carbon footprint of using ChatGPT or Gemini? [August 2025 update],” link)\n“The median Gemini prompt used 33 times more energy in May 2024 than it did in May 2025” (from “In a first, Google has released data on how much energy an AI prompt uses,” link)\n“He says companies are making 50% gross margin or less on the API” (from “Dylan Patel on GPT-5’s Router Moment, GPUs vs TPUs, Monetization,” link)\n“Typical usage costs range from $5-10 per developer per day, but can exceed $100 per hour during intensive use.” (from “Claude 3.7 Release,” link)\nRelevance: Directly addresses the “much cheaper model would work just as well” question by providing context on the real costs and energy footprint of different models and usage patterns.\n\nPerformance vs. Cost/Size Trade-offs:\n\n“Chinese researchers fine-tuned a 32B Qwen model to help with circuit design… It did just as well as GPT-4o on their benchmark. This is an early fine-tuning success story of scientists helping themselves by fine-tuning smaller, cheaper models.” (from “Import AI 426: Playable world models,” link)\n“Gemma 3n, open source runs on phones with 2GB ram.” (from “Google I/O Day - Zvi,” link)\n“Andrej Karpathy: The race for LLM”cognitive core” - a few billion param model that maximally sacrifices encyclopedic knowledge for capability. It lives always-on and by default on every computer as the kernel of LLM personal computing…” (from “AI #123: Moratorium Moratorium,” link)\nRelevance: Provides examples and arguments for why “cheaper models” (smaller, open-source, or mobile-friendly) might be perfectly adequate or even superior for specific tasks, making empirical comparison essential.\n\nPractical Model Comparisons (and their nuances):\n\n“The issue with GPT-5 in a nutshell is that unless you pay for model switching & know to use GPT-5 Thinking or Pro, when you ask ‘GPT-5’ you sometimes get the best available AI & sometimes get one of the worst AIs available and it might even switch within a single conversation.” (from “GPT-5 Model Switching Result,” link)\n“Gemini 2.5 Pro Experimental is America’s next top large language model. That doesn’t mean it is the best model for everything. In particular, it’s still Gemini, so it still is a proud member of the Fun Police, in terms of censorship and also just not being friendly or engaging, or willing to take a stand.” (from “Gemini 2.5 is the New SoTA - Zvi,” link)\n“Claude output is super good, not so much for local models” (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: Shows that “best” is highly context-dependent, requiring empirical testing against your specific use case.\n\n\n\n\n\nThe Inspect Framework & Empirical Evaluation\n\nDirect Mention of Inspect (Python, but establishes concept):\n\n“Investigating truthfulness in a pre-release o3 model” (from “Investigating truthfulness in a pre-release o3 model,” link) explicitly mentions: “They use the Docent eval framework.” While not Inspect, it highlights the use of structured eval frameworks for specific capabilities (truthfulness, tool use).\nRelevance: This demonstrates the utility of such frameworks for deep empirical analysis, which your R port of Inspect aims to provide.\n\nThe Nuance of “Productivity” Evals (and why simple metrics are insufficient):\n\n“The article critiques a study claiming AI slows down experienced developers by 19%… Key methodological issues: no standardization of AI usage, tasks were real issues from developers’ own repositories, order effects possible… The slowdown effect disappears when accounting for ‘scope creep’ tasks. AI appears more helpful for unfamiliar work and learning scenarios.” (from “Are developers slowed down by AI? Evaluating an RCT (?) and what it tells us about developer productivity,” link)\n“Some people claim 5-10x, but there doesn’t seem to be an actual increase in output… ‘People who experience LLMs improving their workflows are mostly fooled by the magical effect… They fail to track how much they spend integrating and fixing this code, and/or how much the code is actually used.’” (from “How Much Are LLMs Actually Boosting Real-World Programmer Productivity?,” link)\nRelevance: This is gold for your talk! It provides a concrete example of why robust empirical evaluation is needed, how easy it is to misinterpret results, and the importance of understanding the interaction between the user, the AI, and the task.\n\nDesigning Effective Benchmarks:\n\n“How to Build Good Language Modeling Benchmarks”: Main criteria are “Natural,” “Automatically Evaluatable,” and “Challenging.” Bonus: “hard to leak into the training data.” Guidelines include: “Have one number for your benchmark.” (from “How to Build Good Language Modeling Benchmarks,” link)\nRelevance: Provides guiding principles for anyone building their own evaluation suite, directly applicable to users of your Inspect R port.\n\nContext Engineering for Agents:\n\n“keep the prompt prefix stable (e.g. timestamps should be the date, at finest), 2) make the context append-only.” (from “Context Engineering for AI Agents: Lessons from Building Manus,” link)\n“unless absolutely necessary, avoid dynamically adding or removing tools mid-iteration. There are two main reasons for this: 1. In most LLMs, tool definitions live near the front of the context after serialization, typically before or after the system prompt. So any change will invalidate the KV-cache for all subsequent actions and observations. 2. When previous actions and observations still refer to tools that are no longer defined in the current context, the model gets confused.” (from “Context Engineering for AI Agents: Lessons from Building Manus,” link)\nRelevance: Crucial for setting up consistent and fair empirical evaluations, especially when dealing with agents and tools. Changes in context can invalidate comparisons.\n\n\n\n\n\nThe “ellmer package has enabled R users…” Context\n\nR and LLM Tooling:\n\n“Remembering what I did this week with LLMs - Garrick Aden-Buie” mentions using ellmer for summarizing GitHub API commits and epoxy for gluing text, and then comments on the intensity of context switching and the need for GitHub archeology (good PR descriptions so you can “forget that I even wrote the PR”). (from “Remembering what I did this week with LLMs - Garrick Aden-Buie,” link)\nRelevance: While not directly about evals, this situates your talk within the practical context of R users already building tools with ellmer and facing real-world challenges where evaluation becomes necessary.\n\n\n\nThis structured list should give you a strong foundation for your talk, drawing directly from the corpus to support your points about the empirical evaluation of LLM-enabled applications. Good luck!"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "",
+    "section": "",
+    "text": "##"
+  },
+  {
+    "objectID": "index.html#when-it-comes-to-running-evals-on-your-llm-features",
+    "href": "index.html#when-it-comes-to-running-evals-on-your-llm-features",
+    "title": "",
+    "section": "When it comes to running evals on your LLM features…",
+    "text": "When it comes to running evals on your LLM features…\n\n\n\n\nYou really should be\n\n\n\n\nYou can do it!"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "",
+    "section": "",
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+  },
+  {
+    "objectID": "index.html#slide-title",
+    "href": "index.html#slide-title",
+    "title": "",
+    "section": "Slide Title",
+    "text": "Slide Title"
+  },
+  {
+    "objectID": "index.html#when-it-comes-to-running-evals-on-your-llm-apps",
+    "href": "index.html#when-it-comes-to-running-evals-on-your-llm-apps",
+    "title": "",
+    "section": "When it comes to running evals on your LLM apps…",
+    "text": "When it comes to running evals on your LLM apps…\n\n\n\n\nYou really should be😬\n\n\n\n\nYou can do it!"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]\nIn SWE, success is driven by how quickly you can iterate.\nSo we have tools for each part of that process:\n\nMake changes (i.e. coding)\nEvaluate quality (i.e. unit testing)\nDebug issues"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-1",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product-1",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]\nThe AI app development cycle looks different for many:\n\nMake changes (i.e. prompt engineering, fine-tuning, …)"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-2",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product-2",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]\nThe AI app development cycle looks different for many:\n\nMake changes (i.e. prompt engineering, fine-tuning, …)\nHave a looksie\nWhack-a-mole"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-3",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product-3",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]\nAI app tooling should look like SWE tooling:\n\nMake changes (i.e. prompt engineering, fine-tuning, …)\nEvaluate quality\nDebug issues\n\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-4",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product-4",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]"
+  },
+  {
+    "objectID": "index.html#you-really-should-be-evaluating-your-llm-product-5",
+    "href": "index.html#you-really-should-be-evaluating-your-llm-product-5",
+    "title": "",
+    "section": "You really should be [evaluating your LLM product]",
+    "text": "You really should be [evaluating your LLM product]"
+  },
+  {
+    "objectID": "index.html#you-can-do-it-1",
+    "href": "index.html#you-can-do-it-1",
+    "title": "",
+    "section": "You can do it!",
+    "text": "You can do it!\nEvaluations of ellmer-based apps are plug-and-play:"
+  },
+  {
+    "objectID": "index.html#you-can-do-it-2",
+    "href": "index.html#you-can-do-it-2",
+    "title": "",
+    "section": "You can do it!",
+    "text": "You can do it!\nEvaluations of ellmer-based apps are plug-and-play:"
+  },
+  {
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
+    "title": "",
+    "section": "",
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "",
+    "section": "",
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
+  },
+  {
+    "objectID": "index.html#solver",
+    "href": "index.html#solver",
+    "title": "",
+    "section": "Solver",
+    "text": "Solver\nThe conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅"
+  },
+  {
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer"
+  },
+  {
+    "objectID": "index.html#section-9",
+    "href": "index.html#section-9",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver✅\nScorer"
+  },
+  {
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
+    "title": "",
+    "section": "Dataset",
+    "text": "Dataset\nA few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’”"
+  },
+  {
+    "objectID": "index.html#dataset-1",
+    "href": "index.html#dataset-1",
+    "title": "",
+    "section": "Dataset",
+    "text": "Dataset\nA few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’ It will be such a great talk!”"
+  },
+  {
+    "objectID": "index.html#dataset-2",
+    "href": "index.html#dataset-2",
+    "title": "",
+    "section": "Dataset",
+    "text": "Dataset"
+  },
+  {
+    "objectID": "index.html#section-10",
+    "href": "index.html#section-10",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver✅\nScorer"
+  },
+  {
+    "objectID": "index.html#scorer",
+    "href": "index.html#scorer",
+    "title": "",
+    "section": "Scorer",
+    "text": "Scorer\n\nclient$chat(glue::glue(\"\n  You are assessing a submitted answer on a given task \n  based on a criterion.\n\n  [Task]: {input}\n\n  [Submission]: {solver_response}\n\n  [Criterion]: {target}\n\n  Does the submission meet the criterion?\n\"))"
+  },
+  {
+    "objectID": "index.html#scorer-1",
+    "href": "index.html#scorer-1",
+    "title": "",
+    "section": "Scorer",
+    "text": "Scorer\nWait, we’re using an LLM to grade an LLM’s output?\n\n\n\n\n Yes.\n\nDon’t take my word for it, though.\nAs much as an evaluation toolkit is about evaluating quality, it is about debugging issues."
+  },
+  {
+    "objectID": "index.html#scorer-2",
+    "href": "index.html#scorer-2",
+    "title": "",
+    "section": "Scorer",
+    "text": "Scorer"
+  },
+  {
+    "objectID": "inst/posit-conf-2025-chat/system-prompt.html#important",
+    "href": "inst/posit-conf-2025-chat/system-prompt.html#important",
+    "title": "",
+    "section": "Important",
+    "text": "Important\nIMPORTANT: Be very brief, almost terse, in your responses."
+  },
+  {
+    "objectID": "index.html#section-11",
+    "href": "index.html#section-11",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset✅\nSolver✅\nScorer"
+  },
+  {
+    "objectID": "index.html#section-12",
+    "href": "index.html#section-12",
+    "title": "",
+    "section": "",
+    "text": "Evaluations have three pieces:\n\nDataset✅\nSolver✅\nScorer✅"
+  },
+  {
+    "objectID": "index.html#section-13",
+    "href": "index.html#section-13",
+    "title": "",
+    "section": "",
+    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+  },
+  {
+    "objectID": "index.html#section-14",
+    "href": "index.html#section-14",
+    "title": "",
+    "section": "",
+    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+  }
+]

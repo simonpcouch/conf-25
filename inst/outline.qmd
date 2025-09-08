@@ -1,0 +1,31 @@
+## Intro
+
+-   A few weeks ago, saw this post about the conf schedule...
+
+-   Narcissus: what happens if I ask about my own stuff?
+
+-   ellmer and chatlas make building chat apps very simple. How do we know whether they're actually solving a problem we have?
+
+-   In this talk, I want to convince you of two things about running evals on your LLM products
+
+    -   You really should be😬
+
+    -   You *can* do it!
+
+## You really should be😬
+
+-   You need evals: whack-a-mole
+
+-   You need *your own* evals: Off-the-shelf ones don't work
+
+    -   ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ S[ource](https://thezvi.substack.com/p/ai-130-talking-past-the-sale)
+
+## You can do it!
+
+-   Plug-and-play
+
+    -   If you have a chat app, you have a solver
+
+    -   All you need is a dataset of expected values
+
+-

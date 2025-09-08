@@ -1,0 +1,16 @@
+Package: conf-25
+Title: Source code and slides for "Is that LLM feature any good?"
+Version: 0.0.0.9000
+Authors@R: 
+    person("Simon", "Couch", , "simon.couch@posit.co", role = c("aut", "cre"))
+Description: Source code and slides for "Is that LLM feature any good?"
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    ellmer,
+    vitals
+Depends: 
+    R (>= 3.5)
+LazyData: true
