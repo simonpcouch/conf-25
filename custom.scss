@@ -97,3 +97,48 @@ $code-block-bg: lighten($charcoal, 71%) !default;  // Slightly darker than inlin
     color: darken($forest, 10%);
   }
 }
+
+// Progress tracker styles
+.progress-tracker {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0));
+  pointer-events: none;
+  
+  .progress-item {
+    flex: 1;
+    text-align: center;
+    color: #d1d1d1;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    &.active {
+      color: $charcoal;
+      font-weight: 600;
+      transform: scale(1.05);
+    }
+    
+    &.completed {
+      color: #d1d1d1;
+      
+      &::after {
+        content: '✓';
+        margin-left: 10px;
+        color: $forest;
+        font-weight: bold;
+        display: inline-block;
+      }
+    }
+  }
+}

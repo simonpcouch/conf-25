@@ -182,21 +182,49 @@ Evaluations of ellmer-based apps are plug-and-play:
 
 ## 
 
+<br><br>
+
 Evaluations have three pieces:
 
 * Dataset
 * Solver
 * Scorer
 
+::: aside
+::: {.progress-tracker}
+::: {.progress-item}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
 ## 
 
-Evaluations have three pieces:
+<br><br>
 
-* <span style="color:#d1d1d1;">Dataset</span>
-* Solver
-* <span style="color:#d1d1d1;">Scorer</span>
+::: aside
+::: {.progress-tracker}
+::: {.progress-item}
+Dataset
+:::
+::: {.progress-item .active}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
 
-## Solver
+##
+
+<br><br>
 
 The conf chat app looks like this:
 
@@ -214,23 +242,59 @@ chat_app(client)
 
 Your solver is the `client`✅
 
+::: aside
+::: {.progress-tracker}
+::: {.progress-item}
+Dataset
+:::
+::: {.progress-item .active}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
 ## 
 
-Evaluations have three pieces:
+<br><br>
 
-* <span style="color:#d1d1d1;">Dataset</span>
-* Solver ✅
-* <span style="color:#d1d1d1;">Scorer</span>
+::: aside
+::: {.progress-tracker}
+::: {.progress-item}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
 
 ## 
 
-Evaluations have three pieces:
+<br><br>
 
-* Dataset
-* Solver ✅
-* <span style="color:#d1d1d1;">Scorer</span>
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
 
-## Dataset
+##
+
+<br><br>
 
 A few:
 
@@ -244,27 +308,80 @@ e.g.
 * `input`: "Are there any talks about evals?"
 * `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
 
-## Dataset
-
-![](figures/spreadsheet.png){fig-align="center"}
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
 
 ## 
 
-Evaluations have three pieces:
+<br>
 
-* Dataset ✅
-* Solver ✅
-* <span style="color:#d1d1d1;">Scorer</span>
+![](figures/spreadsheet.png){fig-align="center" height=600px}
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
 
 ## 
 
-Evaluations have three pieces:
+<br><br>
 
-* Dataset ✅
-* Solver ✅
-* Scorer
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
 
-## Scorer
+## 
+
+<br><br>
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .active}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
 
 ```{r}
 #| label: interpolate
@@ -283,7 +400,23 @@ client$chat(glue::glue("
 "))
 ```
 
-## Scorer
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .active}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
 
 _Wait, we're using an LLM to grade an LLM's output?_
 
@@ -302,13 +435,37 @@ Don't take my word for it, though.
 As much as an evaluation toolkit is about evaluating quality, it is about debugging issues.
 :::
 
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .active}
+Scorer
+:::
+:::
+:::
+
 ## 
 
-Evaluations have three pieces:
+<br><br>
 
-* Dataset ✅
-* Solver ✅
-* Scorer ✅
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .completed}
+Scorer
+:::
+:::
+:::
 
 ##
 
