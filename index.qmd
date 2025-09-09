@@ -75,7 +75,7 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 ::: {style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; margin-top: 20px; width: 100%; height: 50vh;"}
 ::: {style="background-color: #E8A098; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
-<h3 style="color: white; margin: 0;">You really should be😬</h3>
+<h3 style="color: white; margin: 0;">You really should be!</h3>
 :::
 
 ::: {style="background-color: #5B7FA0; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
@@ -83,7 +83,7 @@ knitr::include_graphics("figures/conf-bot-response.png")
 :::
 :::
 
-# [You really should be😬]{style="color: white;"} {background-color="#E8A098"}
+# [You really should be!]{style="color: white;"} {background-color="#E8A098"}
 
 [[evaluating your LLM product]]{style="color: white;"}
 
@@ -546,6 +546,18 @@ htmltools::tags$iframe(
 :::notes
 TODO: Once this is live, try to connect to a deployed version of the viewer
 
+:::
+
+## When it comes to running evals on your LLM apps...
+
+::: {style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; margin-top: 20px; width: 100%; height: 50vh;"}
+::: {style="background-color: #E8A098; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
+<h3 style="color: white; margin: 0;">You really should be!</h3>
+:::
+
+::: {style="background-color: #5B7FA0; padding: 60px 60px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); text-align: center; width: 90%; display: flex; align-items: center; justify-content: center; flex: 1;"}
+<h3 style="color: white; margin: 0;">You can do it!</h3>
+:::
 :::
 
 ##

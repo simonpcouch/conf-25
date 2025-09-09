@@ -214,7 +214,7 @@
     "href": "index.html#when-it-comes-to-running-evals-on-your-llm-apps",
     "title": "",
     "section": "When it comes to running evals on your LLM apps…",
-    "text": "When it comes to running evals on your LLM apps…\n\n\n\n\nYou really should be😬\n\n\n\n\nYou can do it!"
+    "text": "When it comes to running evals on your LLM apps…\n\n\n\n\nYou really should be!\n\n\n\n\nYou can do it!"
   },
   {
     "objectID": "index.html#you-really-should-be-evaluating-your-llm-product",
@@ -481,5 +481,19 @@
     "title": "",
     "section": "",
     "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+  },
+  {
+    "objectID": "index.html#section-27",
+    "href": "index.html#section-27",
+    "title": "",
+    "section": "",
+    "text": "You really should be!\n\n\n\n\nYou can do it!"
+  },
+  {
+    "objectID": "index.html#when-it-comes-to-running-evals-on-your-llm-apps-1",
+    "href": "index.html#when-it-comes-to-running-evals-on-your-llm-apps-1",
+    "title": "",
+    "section": "When it comes to running evals on your LLM apps…",
+    "text": "When it comes to running evals on your LLM apps…\n\n\n\nYou really should be!\n\n\n\n\nYou can do it!"
   }
 ]
