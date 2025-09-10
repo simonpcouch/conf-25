@@ -586,7 +586,7 @@ tsk$eval()
 #| label: log-bundle
 #| echo: false
 htmltools::tags$iframe(
-  src = "inst/log-bundle/index.html",
+  src = "inst/log-bundle/index.html#/logs/2025-09-09T15-13-25-05-00_spreadsheet_6feda01840c754f620e28f.json",
   width = "100%", 
   height = "550px",
   style = "border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);"
