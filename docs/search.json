@@ -67,7 +67,7 @@
     "href": "index.html#section-9",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)"
+    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nTie the whack-a-mole to the real risk here–if you can’t resolve issues without introducing others, you will struggle to take your app from demo to production."
   },
   {
     "objectID": "index.html#section-10",
@@ -109,7 +109,7 @@
     "href": "index.html#section-15",
     "title": "",
     "section": "",
-    "text": "The conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "A few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’”\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-16",
@@ -130,14 +130,14 @@
     "href": "index.html#section-18",
     "title": "",
     "section": "",
-    "text": "A few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’”\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-19",
     "href": "index.html#section-19",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "The conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-20",
@@ -243,5 +243,12 @@
     "title": "",
     "section": "Important",
     "text": "Important\nIMPORTANT: Be very brief, almost terse, in your responses."
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "",
+    "section": "",
+    "text": "When explaining RAG: * Describe it in plain terms, e.g. you have a bunch of text and you chunk it up so that the LLM can search through it before responding to your question. * Note that “RAG” is short for “retrieval augmented generation” since “RAG” shows up in slides later."
   }
 ]

@@ -220,7 +220,94 @@ Scorer
 
 ::: aside
 ::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
 ::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+##
+
+<br><br>
+
+A few:
+
+* `input`s: Prompts that users might provide
+* `target`s: Corresponding grading guidance
+
+. . .
+
+e.g.
+
+* `input`: "Are there any talks about evals?"
+* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br>
+
+![](figures/spreadsheet.png){fig-align="center" height=600px}
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+
+## 
+
+<br><br>
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
 Dataset
 :::
 ::: {.progress-item .active}
@@ -254,7 +341,7 @@ Your solver is the `client`✅
 
 ::: aside
 ::: {.progress-tracker}
-::: {.progress-item}
+::: {.progress-item .completed}
 Dataset
 :::
 ::: {.progress-item .active}
@@ -265,93 +352,6 @@ Scorer
 :::
 :::
 :::
-
-## 
-
-<br><br>
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-## 
-
-<br><br>
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-##
-
-<br><br>
-
-A few:
-
-* `input`s: Prompts that users might provide
-* `target`s: Corresponding grading guidance
-
-. . .
-
-e.g.
-
-* `input`: "Are there any talks about evals?"
-* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-## 
-
-<br>
-
-![](figures/spreadsheet.png){fig-align="center" height=600px}
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
 
 ## 
 
