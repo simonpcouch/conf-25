@@ -39,6 +39,12 @@ Simon P. Couch - Posit PBC
 
 ![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
 
+:::notes
+When explaining RAG:
+* Describe it in plain terms, e.g. you have a bunch of text and you chunk it up so that the LLM can search through it before responding to your question.
+* Note that "RAG" is short for "retrieval augmented generation" since "RAG" shows up in slides later.
+:::
+
 ##
 
 ![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
