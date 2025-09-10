@@ -593,8 +593,8 @@ htmltools::tags$iframe(
   src = "inst/log-bundle/index.html#/logs/2025-09-09T15-13-25-05-00_spreadsheet_6feda01840c754f620e28f.json",
   width = "100%", 
   height = "550px",
-  style = "border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);"
-) 
+  style = "border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); margin: 0 auto 15px auto; display: block;"
+)
 ```
 
 ## When it comes to running evals on your LLM apps...
