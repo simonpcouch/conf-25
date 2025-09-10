@@ -1,14 +1,14 @@
 {
-  "2025-09-05T09-47-44-05-00_spreadsheet_ece5048997f3bd636e1030.json": {
+  "2025-09-09T15-13-25-05-00_spreadsheet_6feda01840c754f620e28f.json": {
     "version": 2,
     "status": "success",
     "eval": {
-      "run_id": "yo7M9UOWZhqXC9jXqRmxca",
-      "created": "2025-09-05T09:47:44-05:00",
+      "run_id": "NozzFMZAiiSff6UVe3kfqY",
+      "created": "2025-09-09T15:13:25-05:00",
       "task": "spreadsheet",
-      "task_id": "ece5048997f3bd636e1030",
+      "task_id": "6feda01840c754f620e28f",
       "task_version": 0,
-      "task_file": "/Users/simoncouch/Documents/rrr/conf-25/index.qmd",
+      "task_file": "",
       "task_attribs": {},
       "task_args": {},
       "dataset": {
@@ -29,7 +29,7 @@
       },
       "scorers": [
         {
-          "name": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\"))",
+          "name": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\"),     instructions = paste0(\"Details provided in the target response are a superset of the information that forms a correct response. For example, if a input asks 'when' something happens, an answer that notes 'when' some event is without noting other details—like the location or speakers—is correct.\",         vitals:::qa_default_instructions()))",
           "options": {},
           "metrics": [
             {
@@ -64,13 +64,13 @@
       "completed_samples": 8,
       "scores": [
         {
-          "name": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\")) (gpt-4.1)",
-          "scorer": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\")) (gpt-4.1)",
+          "name": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\"),     instructions = paste0(\"Details provided in the target response are a superset of the information that forms a correct response. For example, if a input asks 'when' something happens, an answer that notes 'when' some event is without noting other details—like the location or speakers—is correct.\",         vitals:::qa_default_instructions())) (gpt-4.1)",
+          "scorer": "model_graded_qa(scorer_chat = ellmer::chat_openai(model = \"gpt-4.1\"),     instructions = paste0(\"Details provided in the target response are a superset of the information that forms a correct response. For example, if a input asks 'when' something happens, an answer that notes 'when' some event is without noting other details—like the location or speakers—is correct.\",         vitals:::qa_default_instructions())) (gpt-4.1)",
           "params": {},
           "metrics": {
             "accuracy": {
               "name": "accuracy",
-              "value": 50,
+              "value": 75,
               "params": {
                 "1": "numeric_scores"
               }
@@ -80,15 +80,15 @@
       ]
     },
     "stats": {
-      "started_at": "2025-09-05T09:47:30-05:00",
-      "completed_at": "2025-09-05T09:47:44-05:00",
+      "started_at": "2025-09-09T15:13:13-05:00",
+      "completed_at": "2025-09-09T15:13:25-05:00",
       "model_usage": {
         "gpt-4.1-mini": {
-          "input_tokens": 68246,
+          "input_tokens": 74435,
           "cache_creation_input_tokens": 0,
           "cache_read_input_tokens": 0,
-          "output_tokens": 1255,
-          "total_tokens": 69501
+          "output_tokens": 1363,
+          "total_tokens": 75798
         }
       }
     }

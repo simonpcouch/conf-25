@@ -487,7 +487,14 @@ usethis::use_data(spreadsheet, overwrite = TRUE)
 tsk <- Task$new(
   dataset = spreadsheet,
   solver = generate(client),
-  scorer = model_graded_qa(scorer_chat = ellmer::chat_openai(model = "gpt-4.1"))
+  scorer = model_graded_qa(
+    scorer_chat = ellmer::chat_openai(model = "gpt-4.1"),
+    instructions = 
+      paste0(
+        "Details provided in the target response are a superset of the information that forms a correct response. For example, if a input asks 'when' something happens, an answer that notes 'when' some event is without noting other details—like the location or speakers—is correct.",
+        vitals:::qa_default_instructions()
+      )
+    )
 )
 
 tsk$eval()
