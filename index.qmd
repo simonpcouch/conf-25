@@ -81,6 +81,11 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 ![](figures/vitals-intro/vitals-intro.002.png){fig-align="center"}
 
+##
+
+<br>
+
+![](figures/vitals-intro/vitals-intro.003.png){fig-align="center"}
 
 ## When it comes to running evals on your LLM apps...
 
