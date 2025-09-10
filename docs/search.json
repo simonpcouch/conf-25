@@ -74,21 +74,21 @@
     "href": "index.html#section-10",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\n\n\n(prompt engineering, fine-tuning, …)"
+    "text": "In AI:\n\n\n\nMake changes\n\n\n(prompt engineering, RAG, …)"
   },
   {
     "objectID": "index.html#section-11",
     "href": "index.html#section-11",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nTie the whack-a-mole to the real risk here–if you can’t resolve issues without introducing others, you will struggle to take your app from demo to production."
+    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, RAG, …)\n\n\n\nTie the whack-a-mole to the real risk here–if you can’t resolve issues without introducing others, you will struggle to take your app from demo to production."
   },
   {
     "objectID": "index.html#section-12",
     "href": "index.html#section-12",
     "title": "",
     "section": "",
-    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(prompt engineering, RAG, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
   },
   {
     "objectID": "index.html#section-13",

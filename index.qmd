@@ -137,11 +137,11 @@ In SWE:
 In AI:
 
 :::::: {.columns}
-::: {.column width="33%"}
+::: {.column width="40%"}
 1) Make changes
 :::
-::: {.column width="67%"}
-(prompt engineering, fine-tuning, ...)
+::: {.column width="60%"}
+(prompt engineering, RAG, ...)
 :::
 :::
 
@@ -150,17 +150,17 @@ In AI:
 In AI:
 
 :::::: {.columns}
-::: {.column width="33%"}
+::: {.column width="40%"}
 1) Make changes
 2) Have a looksie
 3) Whack-a-mole 
 :::
-::: {.column width="67%"}
-(prompt engineering, fine-tuning, ...)
+::: {.column width="60%"}
+(prompt engineering, RAG, ...)
 :::
 :::
 
-![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=365px top=150px}
+![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=430px top=150px}
 
 :::notes
 Tie the whack-a-mole to the real risk here--if you can't resolve issues without introducing others, you will struggle to take your app from demo to production.
@@ -171,17 +171,17 @@ Tie the whack-a-mole to the real risk here--if you can't resolve issues without 
 AI 🤝 SWE tooling
 
 :::::: {.columns}
-::: {.column width="33%"}
+::: {.column width="40%"}
 1) Make changes
 2) Evaluate quality
 3) Debug issues 
 :::
-::: {.column width="67%"}
-(prompt engineering, fine-tuning, ...)
+::: {.column width="60%"}
+(prompt engineering, RAG, ...)
 :::
 :::
 
-![](figures/hexes/vitals.png){.absolute width=204.439px left=355px top=150px}
+![](figures/hexes/vitals.png){.absolute width=204.439px left=430px top=150px}
 
 :::notes
 If there's enough time here, this is the "why not just use an off-the-shelf eval?"
