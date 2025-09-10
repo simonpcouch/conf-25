@@ -151,7 +151,7 @@
     "href": "index.html#section-21",
     "title": "",
     "section": "",
-    "text": "The conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "The conf chat app looks like this:\n\nlibrary(ellmer)\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nlive_browser(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-22",

@@ -340,11 +340,14 @@ The conf chat app looks like this:
 ```{r}
 #| label: client
 #| eval: false
+#| code-line-numbers: "|3|5|7|"
+library(ellmer)
+
 client <- chat_openai()
 
 # add prompting, a RAG tool, etc...
 
-chat_app(client)
+live_browser(client)
 ```
 
 . . .
@@ -550,6 +553,7 @@ vitals::vitals_bundle("inst/logs/", "inst/log-bundle")
 #| message: false
 #| warning: false
 #| eval: false
+#| code-line-numbers: "|3|5-8|"
 library(vitals)
 
 spreadsheet <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing")
