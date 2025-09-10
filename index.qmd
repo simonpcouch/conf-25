@@ -39,6 +39,12 @@ Simon P. Couch - Posit PBC
 
 ![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
 
+:::notes
+When explaining RAG:
+* Describe it in plain terms, e.g. you have a bunch of text and you chunk it up so that the LLM can search through it before responding to your question.
+* Note that "RAG" is short for "retrieval augmented generation" since "RAG" shows up in slides later.
+:::
+
 ##
 
 ![](figures/conf-bot.png){.absolute width=965.695px height=650.862px left=41px top=19.2754px}
@@ -65,9 +71,21 @@ knitr::include_graphics("figures/conf-bot-response.png")
 
 ##
 
-![](figures/hexes/vitals.png){.absolute width=250px left=200px top=200px}
+<br>
 
-![](figures/inspect.png){.absolute width=400px left=550px top=280px style="border-radius: 10px; box-shadow: 0 10px 16px 0 rgba(0,0,0,0.1),0 6px 20px 0 rgba(0,0,0,0.1);"}
+![](figures/vitals-intro/vitals-intro.001.png){fig-align="center"}
+
+##
+
+<br>
+
+![](figures/vitals-intro/vitals-intro.002.png){fig-align="center"}
+
+##
+
+<br>
+
+![](figures/vitals-intro/vitals-intro.003.png){fig-align="center"}
 
 ## When it comes to running evals on your LLM apps...
 
@@ -144,6 +162,10 @@ In AI:
 
 ![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=365px top=150px}
 
+:::notes
+Tie the whack-a-mole to the real risk here--if you can't resolve issues without introducing others, you will struggle to take your app from demo to production.
+:::
+
 ## 
 
 AI 🤝 SWE tooling
@@ -210,7 +232,94 @@ Scorer
 
 ::: aside
 ::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
 ::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+##
+
+<br><br>
+
+A few:
+
+* `input`s: Prompts that users might provide
+* `target`s: Corresponding grading guidance
+
+. . .
+
+e.g.
+
+* `input`: "Are there any talks about evals?"
+* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br>
+
+![](figures/spreadsheet.png){fig-align="center" height=600px}
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .active}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+
+## 
+
+<br><br>
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item}
+Solver
+:::
+::: {.progress-item}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
+
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
 Dataset
 :::
 ::: {.progress-item .active}
@@ -244,7 +353,7 @@ Your solver is the `client`✅
 
 ::: aside
 ::: {.progress-tracker}
-::: {.progress-item}
+::: {.progress-item .completed}
 Dataset
 :::
 ::: {.progress-item .active}
@@ -255,93 +364,6 @@ Scorer
 :::
 :::
 :::
-
-## 
-
-<br><br>
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-## 
-
-<br><br>
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-##
-
-<br><br>
-
-A few:
-
-* `input`s: Prompts that users might provide
-* `target`s: Corresponding grading guidance
-
-. . .
-
-e.g.
-
-* `input`: "Are there any talks about evals?"
-* `target`: "Yes, Simon Couch will be giving a talk called 'Is that LLM feature any good?'"
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
-## 
-
-<br>
-
-![](figures/spreadsheet.png){fig-align="center" height=600px}
-
-::: aside
-::: {.progress-tracker}
-::: {.progress-item .active}
-Dataset
-:::
-::: {.progress-item .completed}
-Solver
-:::
-::: {.progress-item}
-Scorer
-:::
-:::
-:::
-
 
 ## 
 
@@ -424,10 +446,31 @@ _Wait, we're using an LLM to grade an LLM's output?_
 
 ![](figures/bear/spiderman.png){.absolute width=410.289px left=500.711px top=270.892px}
 
-. . .
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .active}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
+
+_Wait, we're using an LLM to grade an LLM's output?_
+
+![](figures/bear/spiderman-happy.png){.absolute width=410.289px left=500.711px top=270.892px}
 
 <br><br><br><br><br><br><br>
 Yes.
+
 
 :::notes
 Don't take my word for it, though. 
