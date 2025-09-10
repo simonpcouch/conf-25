@@ -3,7 +3,7 @@ title: ""
 format: 
   revealjs:
     theme: [default, custom.scss]
-    footer: '<span style="color:#aa5b31;">github.com/simonpcouch/conf-25</span>'
+    footer: '<span style="color:#bf7971;">github.com/simonpcouch/conf-25</span>'
 editor: source
 knitr:
   opts_chunk: 
@@ -112,7 +112,7 @@ knitr::include_graphics("figures/conf-bot-response.png")
 > _Like software engineering, success with AI hinges on how fast you can iterate._ - Hamel Husain
 
 :::footer
-<span style="color:#aa5b31;">https://hamel.dev/blog/posts/evals/</span>
+<span style="color:#bf7971;">https://hamel.dev/blog/posts/evals/</span>
 :::
 
 ## 
@@ -596,11 +596,6 @@ htmltools::tags$iframe(
   style = "border-radius: 10px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);"
 ) 
 ```
-
-:::notes
-TODO: Once this is live, try to connect to a deployed version of the viewer
-
-:::
 
 ## When it comes to running evals on your LLM apps...
 

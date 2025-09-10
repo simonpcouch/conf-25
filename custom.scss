@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;1,500&display=swap');
 
 // Primary colors
-$rust: #c46938;
-$forest: #3d6c56;
+$rust: #c9837b;
+$forest: #4c7ba8ff;
 $charcoal: #1a162d;
 
 // colors
@@ -133,9 +133,8 @@ $code-block-bg: lighten($charcoal, 71%) !default;  // Slightly darker than inlin
       color: #d1d1d1;
       
       &::after {
-        content: '✓';
+        content: '✅';
         margin-left: 10px;
-        color: $forest;
         font-weight: bold;
         display: inline-block;
       }
