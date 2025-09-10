@@ -150,6 +150,10 @@ In AI:
 
 ![](figures/bear/whack-a-mole.png){.absolute width=390.5px height=220px left=365px top=150px}
 
+:::notes
+Tie the whack-a-mole to the real risk here--if you can't resolve issues without introducing others, you will struggle to take your app from demo to production.
+:::
+
 ## 
 
 AI 🤝 SWE tooling
