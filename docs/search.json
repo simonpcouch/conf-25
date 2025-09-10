@@ -53,35 +53,35 @@
     "href": "index.html#section-7",
     "title": "",
     "section": "",
-    "text": "In SWE:\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(coding)\n(unit testing)"
+    "text": "Like software engineering, success with AI hinges on how fast you can iterate. - Hamel Husain\n\n\nhttps://hamel.dev/blog/posts/evals/"
   },
   {
     "objectID": "index.html#section-8",
     "href": "index.html#section-8",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\n\n\n(prompt engineering, fine-tuning, …)"
+    "text": "In SWE:\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(coding)\n(unit testing)"
   },
   {
     "objectID": "index.html#section-9",
     "href": "index.html#section-9",
     "title": "",
     "section": "",
-    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nTie the whack-a-mole to the real risk here–if you can’t resolve issues without introducing others, you will struggle to take your app from demo to production."
+    "text": "In AI:\n\n\n\nMake changes\n\n\n(prompt engineering, fine-tuning, …)"
   },
   {
     "objectID": "index.html#section-10",
     "href": "index.html#section-10",
     "title": "",
     "section": "",
-    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
+    "text": "In AI:\n\n\n\nMake changes\nHave a looksie\nWhack-a-mole\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nTie the whack-a-mole to the real risk here–if you can’t resolve issues without introducing others, you will struggle to take your app from demo to production."
   },
   {
     "objectID": "index.html#section-11",
     "href": "index.html#section-11",
     "title": "",
     "section": "",
-    "text": "Evaluations of ellmer-based apps are plug-and-play:"
+    "text": "AI 🤝 SWE tooling\n\n\n\nMake changes\nEvaluate quality\nDebug issues\n\n\n(prompt engineering, fine-tuning, …)\n\n\n\nIf there’s enough time here, this is the “why not just use an off-the-shelf eval?” - ‘this new kid claims to be smarter than the old kid, but both kids tie their shoes equally well.’ Source"
   },
   {
     "objectID": "index.html#section-12",
@@ -95,28 +95,28 @@
     "href": "index.html#section-13",
     "title": "",
     "section": "",
-    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Evaluations of ellmer-based apps are plug-and-play:"
   },
   {
     "objectID": "index.html#section-14",
     "href": "index.html#section-14",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "Evaluations have three pieces:\n\nDataset\nSolver\nScorer\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-15",
     "href": "index.html#section-15",
     "title": "",
     "section": "",
-    "text": "A few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’”\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-16",
     "href": "index.html#section-16",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "A few:\n\ninputs: Prompts that users might provide\ntargets: Corresponding grading guidance\n\n\ne.g.\n\ninput: “Are there any talks about evals?”\ntarget: “Yes, Simon Couch will be giving a talk called ‘Is that LLM feature any good?’”\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-17",
@@ -137,14 +137,14 @@
     "href": "index.html#section-19",
     "title": "",
     "section": "",
-    "text": "The conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-20",
     "href": "index.html#section-20",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "The conf chat app looks like this:\n\nclient &lt;- chat_openai()\n\n# add prompting, a RAG tool, etc...\n\nchat_app(client)\n\n\nYour solver is the client✅\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-21",
@@ -158,35 +158,35 @@
     "href": "index.html#section-22",
     "title": "",
     "section": "",
-    "text": "client$chat(glue::glue(\"\n  You are assessing a submitted answer on a given task \n  based on a criterion.\n\n  [Task]: {input}\n\n  [Submission]: {solver_response}\n\n  [Criterion]: {target}\n\n  Does the submission meet the criterion?\n\"))\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-23",
     "href": "index.html#section-23",
     "title": "",
     "section": "",
-    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "client$chat(glue::glue(\"\n  You are assessing a submitted answer on a given task \n  based on a criterion.\n\n  [Task]: {input}\n\n  [Submission]: {solver_response}\n\n  [Criterion]: {target}\n\n  Does the submission meet the criterion?\n\"))\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-24",
     "href": "index.html#section-24",
     "title": "",
     "section": "",
-    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n Yes.\n\nDon’t take my word for it, though.\nAs much as an evaluation toolkit is about evaluating quality, it is about debugging issues.\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-25",
     "href": "index.html#section-25",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n Yes.\n\nDon’t take my word for it, though.\nAs much as an evaluation toolkit is about evaluating quality, it is about debugging issues.\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-26",
     "href": "index.html#section-26",
     "title": "",
     "section": "",
-    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#when-it-comes-to-running-evals-on-your-llm-apps-1",
@@ -254,6 +254,13 @@
   {
     "objectID": "index.html#section-27",
     "href": "index.html#section-27",
+    "title": "",
+    "section": "",
+    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+  },
+  {
+    "objectID": "index.html#section-28",
+    "href": "index.html#section-28",
     "title": "",
     "section": "",
     "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
