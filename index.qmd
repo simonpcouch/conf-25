@@ -434,10 +434,31 @@ _Wait, we're using an LLM to grade an LLM's output?_
 
 ![](figures/bear/spiderman.png){.absolute width=410.289px left=500.711px top=270.892px}
 
-. . .
+::: aside
+::: {.progress-tracker}
+::: {.progress-item .completed}
+Dataset
+:::
+::: {.progress-item .completed}
+Solver
+:::
+::: {.progress-item .active}
+Scorer
+:::
+:::
+:::
+
+## 
+
+<br><br>
+
+_Wait, we're using an LLM to grade an LLM's output?_
+
+![](figures/bear/spiderman-happy.png){.absolute width=410.289px left=500.711px top=270.892px}
 
 <br><br><br><br><br><br><br>
 Yes.
+
 
 :::notes
 Don't take my word for it, though. 

@@ -165,28 +165,28 @@
     "href": "index.html#section-23",
     "title": "",
     "section": "",
-    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n\n\n\n Yes.\n\nDon’t take my word for it, though.\nAs much as an evaluation toolkit is about evaluating quality, it is about debugging issues.\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
+    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-24",
     "href": "index.html#section-24",
     "title": "",
     "section": "",
-    "text": "Dataset\n\n\nSolver\n\n\nScorer"
+    "text": "Wait, we’re using an LLM to grade an LLM’s output?\n\n Yes.\n\nDon’t take my word for it, though.\nAs much as an evaluation toolkit is about evaluating quality, it is about debugging issues.\n\n\n\n\n\nDataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-25",
     "href": "index.html#section-25",
     "title": "",
     "section": "",
-    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
+    "text": "Dataset\n\n\nSolver\n\n\nScorer"
   },
   {
     "objectID": "index.html#section-26",
     "href": "index.html#section-26",
     "title": "",
     "section": "",
-    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
+    "text": "library(vitals)\n\nspreadsheet &lt;- googlesheets4::read_sheet(\"https://docs.google.com/spreadsheets/d/1Pm0_itdB61H539zf8Ksm8l_6r-8tqspuvZUdFVoLwKg/edit?usp=sharing\")\n\ntsk &lt;- Task$new(\n  dataset = spreadsheet,\n  solver = generate(client),\n  scorer = model_graded_qa()\n)\n\n\nTODO: should we move the library(vitals) up to an earlier slide?"
   },
   {
     "objectID": "index.html#when-it-comes-to-running-evals-on-your-llm-apps-1",
@@ -250,5 +250,12 @@
     "title": "",
     "section": "",
     "text": "When explaining RAG: * Describe it in plain terms, e.g. you have a bunch of text and you chunk it up so that the LLM can search through it before responding to your question. * Note that “RAG” is short for “retrieval augmented generation” since “RAG” shows up in slides later."
+  },
+  {
+    "objectID": "index.html#section-27",
+    "href": "index.html#section-27",
+    "title": "",
+    "section": "",
+    "text": "tsk$eval()\n\n\n✅ Solving [7s]                                                    \n✅ Scoring [5.5s]\n\n\n\n\n\n\n\n\nTODO: Once this is live, try to connect to a deployed version of the viewer"
   }
 ]
